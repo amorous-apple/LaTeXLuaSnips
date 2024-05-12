@@ -41,9 +41,6 @@ s({trig="homework", dscr="A convenient boilerplate for math homework. Add/delete
 
 \usepackage[margin=1in]{geometry} 
 \usepackage{amsmath,amsthm,amssymb}
-\usepackage{tensor}
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Z}{\mathbb{Z}}
 
 \newenvironment{ex}[2][Exercise]{\begin{trivlist}
 \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}

@@ -1,10 +1,21 @@
 return {
+---------------ENVIRONMENTS (begin, fig*,gather*,equation, etc....)---------------
 s({trig="eq", dscr="Expands 'eq' into a (numbered) equation environment",wordTrig = false},
   fmta(
      [[
        \begin{equation}
            <>
        \end{equation}
+     ]],
+     { i(1) }
+  )
+),
+s({trig="eqn", dscr="Expands 'eq' into a (non-numbered) equation environment",wordTrig = false},
+  fmta(
+     [[
+       \begin{equation*}
+           <>
+       \end{equation*}
      ]],
      { i(1) }
   )
