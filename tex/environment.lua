@@ -10,6 +10,7 @@ s({trig="eq", dscr="Expands 'eq' into a (numbered) equation environment",wordTri
      { i(1) }
   )
 ),
+
 s({trig="eqn", dscr="Expands 'eq' into a (non-numbered) equation environment",wordTrig = false},
   fmta(
      [[
