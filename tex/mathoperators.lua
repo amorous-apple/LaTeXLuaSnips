@@ -34,7 +34,7 @@ s({trig="grd",snippetType="autosnippet",dscr="Gradient",wordTrig = false},
 fmta("\\nabla{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="div",snippetType="autosnippet",dscr="Divergence",wordTrig = false},
-fmta("\\vec{\\nabla}\\centerdot\\vec{<>}",{i(1)}),{condition = in_mathzone}),
+fmta("\\vec{\\nabla}\\cdot\\vec{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="rot",snippetType="autosnippet",dscr="Rotational",wordTrig = false},
 fmta("\\vec{\\nabla}\\times\\vec{<>}",{i(1)}),{condition = in_mathzone}),
@@ -93,7 +93,7 @@ s({trig="nab",snippetType= "autosnippet",dscr= "nabla",wordTrig = false},
 
 s({trig="dot",snippetType= "autosnippet",dscr= "center dot",wordTrig = false},
     {
-      t("\\centerdot"),
+      t("\\cdot"),
   },{condition = in_mathzone}),
 
 s({trig="inf",snippetType= "autosnippet",dscr= "Infinity",wordTrig = false},
