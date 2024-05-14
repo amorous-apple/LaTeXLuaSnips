@@ -1,10 +1,9 @@
+- Fix brackets (rb, sb, etc.)------------>DONE (NablaSquared)
 - Lists
 - Not equal sign
 - Sum conflicts with su
 - Other conflicts (commented out)
 - Gather
-- Math environments not working (align, gather, ...)
-- Fix brackets (rb, sb, etc.)
 - Trig functions
 - Exp function shortcut
 - Perhaps reformat integrals to move variable of integration in front of the argument.

@@ -70,19 +70,19 @@ s({trig="sb",dscr="Square Brackets",wordTrig= false},fmta([[
 ]],{i(1),i(0)})),
 
 s({trig="cb",dscr="Curly Brackets",wordTrig= false},fmta([[
-\left \{<>\} \right <>
+\left\{<> \right\}<>
 ]],{i(1),i(0)})),
 
 s({trig="ab",dscr="Angle Brackets",wordTrig= false},fmta([[
-\left \langle <> \rangle \right <>
+\left\langle <> \right\rangle<>
 ]],{i(1),i(0)})),
 
 s({trig="vb",dscr="Vertical Brackets",wordTrig= false},fmta([[
-\left | <> | \right <>
+\left| <> \right| <>
 ]],{i(1),i(0)})),
 
 s({trig="db",dscr="double vertical Brackets",wordTrig= false},fmta([[
-\left | <> | \right <>
+\left| <> \right| <>
 ]],{i(1),i(0)})),
 
 }
