@@ -10,5 +10,12 @@
 - Perhaps reformat integrals to move variable of integration in front of the argument.
 - Theta symbol? 
 - Symbols to show about/ approximately.
-
+- hbar?
+- braket notation for QM
+- Units
+- Normal arrow (like in limits)
+- Limit notation
+- Much greater than/ much less than (<< and >>)
+- >= and <=
+- Must be equal to symbol
 
