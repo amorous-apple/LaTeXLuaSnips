@@ -34,9 +34,7 @@ s({trig="dm", dscr="inserts a display math (non-numbered equations) environment"
 s({trig="im", dscr="Expands 'im' into an inline math environment",wordTrig = false},
   fmta(
      [[
-     	\(
-           <>
-	\)
+     	\(<>\)
      ]],
      { i(1) }
   )
@@ -62,21 +60,27 @@ s({trig="beg", dscr="Inserts a begin{}/end{} environment",wordTrig = false},
   )
 ),
 --BRACKETS, PARENTHESES, AND DELIMITERS (NOTE: THE \LEFT \RIGHT COMMAND AUTOMATICALLY ADJUST THE SIZE OF THE DELIMITERS TO MATCH THE HEIGHT OF THE CONTENT INSIDE THEM.
+
 s({trig="rb",dscr="Parentheses (Round brackets)",wordTrig= false},fmta([[
-\left(<>)\right <>
+\left(<>\right) <>
 ]],{i(1),i(0)})),
+
 s({trig="sb",dscr="Square Brackets",wordTrig= false},fmta([[
-\left[<>]\right <>
+\left[<>\right] <>
 ]],{i(1),i(0)})),
+
 s({trig="cb",dscr="Curly Brackets",wordTrig= false},fmta([[
 \left \{<>\} \right <>
 ]],{i(1),i(0)})),
+
 s({trig="ab",dscr="Angle Brackets",wordTrig= false},fmta([[
 \left \langle <> \rangle \right <>
 ]],{i(1),i(0)})),
+
 s({trig="vb",dscr="Vertical Brackets",wordTrig= false},fmta([[
 \left | <> | \right <>
 ]],{i(1),i(0)})),
+
 s({trig="db",dscr="double vertical Brackets",wordTrig= false},fmta([[
 \left | <> | \right <>
 ]],{i(1),i(0)})),

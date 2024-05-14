@@ -1,0 +1,7 @@
+- Lists
+- Not equal sign
+- Sum conflicts with su
+- Other conflicts (commented out)
+- Gather
+- Math environments not working (align, gather, ...)
+- Fix brackets (rb, sb, etc.)

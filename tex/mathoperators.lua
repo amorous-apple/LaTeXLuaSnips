@@ -79,7 +79,10 @@ fmta("\\vec{\\nabla}\\times\\vec{<>}",{i(1)}),{condition = in_mathzone}),
 s({trig="brk",snippetType="autosnippet",dscr="Hilbert product",wordTrig = false},
 fmt("<{}|{}>{}",{i(1),i(2),i(0)}),{condition = in_mathzone}),
 
-s({trig="par",snippetType="autosnippet",dscr="partial symbol",wordTrig = false},
+s({trig="pd",snippetType="autosnippet",dscr="partial derivative down",wordTrig = false},
+fmta("\\partial_{<>}",{i(1)}),{condition = in_mathzone}),
+
+s({trig="pu",snippetType="autosnippet",dscr="partial derivative up",wordTrig = false},
 fmta("\\partial_{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="pt",snippetType="autosnippet",dscr="Partial_time operator",wordTrig = false},
@@ -88,16 +91,16 @@ fmta("\\partial_{t}{<>}",{i(1)}),{condition = in_mathzone}),
 s({trig="px",snippetType="autosnippet",dscr="Partial_x operator",wordTrig = false},
 fmta("\\partial_{x}{<>}",{i(1)}),{condition = in_mathzone}),
 
-s({trig="pd",snippetType="autosnippet",dscr="Partial derivative leibniz notation",wordTrig = false},
-fmta("\\fracc{\\partial<>}{\\partial<>}",{i(1),i(2)}),{condition = in_mathzone}),
+--s({trig="pd",snippetType="autosnippet",dscr="Partial derivative leibniz notation",wordTrig = false},
+--fmta("\\fracc{\\partial<>}{\\partial<>}",{i(1),i(2)}),{condition = in_mathzone}),
+--
+--s({trig="pdt",snippetType="autosnippet",dscr=" Time Partial derivative leibniz notation",wordTrig = false},
+--fmta("\\fracc{\\partial<>}{\\partial t}",{i(1)}),{condition = in_mathzone}),
+--
+--s({trig="pdx",snippetType="autosnippet",dscr="Position Partial derivative leibniz notation",wordTrig = false},
+--fmta("\\fracc{\\partial<>}{\\partial x}",{i(1)}),{condition = in_mathzone}),
 
-s({trig="pdt",snippetType="autosnippet",dscr=" Time Partial derivative leibniz notation",wordTrig = false},
-fmta("\\fracc{\\partial<>}{\\partial t}",{i(1)}),{condition = in_mathzone}),
-
-s({trig="pdx",snippetType="autosnippet",dscr="Position Partial derivative leibniz notation",wordTrig = false},
-fmta("\\fracc{\\partial<>}{\\partial x}",{i(1)}),{condition = in_mathzone}),
-
-s({trig="up",snippetType="autosnippet",dscr="Exponent operator",wordTrig = false},
+s({trig="su",snippetType="autosnippet",dscr="Exponent operator (superscript)",wordTrig = false},
 fmta("^{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="dn",snippetType="autosnippet",dscr="Exponent operator",wordTrig = false},
@@ -172,6 +175,12 @@ s({trig="perp",snippetType= "autosnippet",dscr= "perpendicular symbol",wordTrig 
     {
       t("\\perp"),
   },{condition = in_mathzone}),
+
+s({trig="neq",snippetType= "autosnippet",dscr= "not equal sign",wordTrig = false},
+    {
+      t("\\neq"),
+  },{condition = in_mathzone}),
+
 
 
 --MATHEMATICAL FONTS (ONLY TO BE USED IN MATH MODE!) MAYBE MAKE THEM AUTOSNIPPETS?
