@@ -5,3 +5,10 @@
 - Gather
 - Math environments not working (align, gather, ...)
 - Fix brackets (rb, sb, etc.)
+- Trig functions
+- Exp function shortcut
+- Perhaps reformat integrals to move variable of integration in front of the argument.
+- Theta symbol? 
+- Symbols to show about/ approximately.
+
+
