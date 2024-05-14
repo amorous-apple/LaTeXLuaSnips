@@ -77,7 +77,13 @@ s({trig="rot",snippetType="autosnippet",dscr="Rotational",wordTrig = false},
 fmta("\\vec{\\nabla}\\times\\vec{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="brk",snippetType="autosnippet",dscr="Hilbert product",wordTrig = false},
-fmt("<{}|{}>{}",{i(1),i(2),i(0)}),{condition = in_mathzone}),
+fmt("\\left<{}|{}\\right>{}",{i(1),i(2),i(0)}),{condition = in_mathzone}),
+
+s({trig="bra",snippetType="autosnippet",dscr="Bra from bracket",wordTrig = false},
+fmt("\\left<{}\\right|{}",{i(1),i(0)}),{condition = in_mathzone}),
+
+s({trig="ket",snippetType="autosnippet",dscr="Ket from bracket",wordTrig = false},
+fmt("\\left|{}\\right>{}",{i(1),i(0)}),{condition = in_mathzone}),
 
 s({trig="pd",snippetType="autosnippet",dscr="partial derivative down",wordTrig = false},
 fmta("\\partial_{<>}",{i(1)}),{condition = in_mathzone}),
@@ -118,6 +124,9 @@ fmta("\\int_{\\inf}^{-\\inf} {<>} \\,d<>",{i(1),i(2)}),{condition = in_mathzone}
 s({trig="sum",snippetType="autosnippet",dscr="Sum operator",wordTrig = false},
 fmta("\\sum_{<>}^{<>} {<>} ",{i(1),i(2),i(3)}),{condition = in_mathzone}),
 
+s({trig="ee",snippetType="autosnippet",dscr="exponential function",wordTrig = false},
+fmta("e^{<>} <>",{i(1),i(0)}),{condition = in_mathzone}),
+
 
 
 
@@ -151,7 +160,7 @@ s({trig="pi",snippetType= "autosnippet",dscr= "Partial",wordTrig = false},
       t("\\pi"),
   },{condition = in_mathzone}),
 
-s({trig="hbar",snippetType= "autosnippet",dscr= "Plank constant 'hbar'",wordTrig = false},
+s({trig="hb",snippetType= "autosnippet",dscr= "Plank constant 'hbar'",wordTrig = false},
     {
       t("\\hbar"),
   },{condition = in_mathzone}),

@@ -1,16 +1,15 @@
-- Fix brackets (rb, sb, etc.)------------>DONE (NablaSquared)
-- Lists
-- Not equal sign
+- DONE Fix brackets (rb, sb, etc.)
+- DONE try: "gat, gatn" Gather environments
+- DONE try: "bra, ket, brk" braket notation for QM
+- DONE try: "neq" Not equal sign
+- DONE try: "ee" Exp function shortcut Lists
+- DONE try: "hb" hbar?
+- DONE try: ";O, ;o"Theta symbol? 
 - Sum conflicts with su
 - Other conflicts (commented out)
-- Gather
 - Trig functions
-- Exp function shortcut
-- Perhaps reformat integrals to move variable of integration in front of the argument.
-- Theta symbol? 
+- Perhaps reformat integrals to move variable of integration in front of the argument. (For dealing with integrals of multiple variables)
 - Symbols to show about/ approximately.
-- hbar?
-- braket notation for QM
 - Units
 - Normal arrow (like in limits)
 - Limit notation

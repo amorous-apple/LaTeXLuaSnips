@@ -1,6 +1,6 @@
 return {
 ---------------ENVIRONMENTS (begin, fig*,gather*,equation, etc....)---------------
-s({trig="eq", dscr="Expands 'eq' into a (numbered) equation environment",wordTrig = false},
+s({trig="eqn", dscr="Expands 'eq' into a (numbered) equation environment",wordTrig = false},
   fmta(
      [[
        \begin{equation}
@@ -11,7 +11,7 @@ s({trig="eq", dscr="Expands 'eq' into a (numbered) equation environment",wordTri
   )
 ),
 
-s({trig="eqn", dscr="Expands 'eq' into a (non-numbered) equation environment",wordTrig = false},
+s({trig="eq", dscr="Expands 'eq' into a (non-numbered) equation environment",wordTrig = false},
   fmta(
      [[
        \begin{equation*}
@@ -59,6 +59,27 @@ s({trig="beg", dscr="Inserts a begin{}/end{} environment",wordTrig = false},
      { i(1),i(0),rep(1) }
   )
 ),
+s({trig="gat", dscr="Expands 'gat' into a (non-numbered) gather environment",wordTrig = false},
+  fmta(
+     [[
+       \begin{gather*}
+           <>
+       \end{gather*}
+     ]],
+     { i(1) }
+  )
+),
+s({trig="gatn", dscr="Expands 'gatn' into a (numbered) gather environment",wordTrig = false},
+  fmta(
+     [[
+       \begin{gather}
+           <>
+       \end{gather}
+     ]],
+     { i(1) }
+  )
+),
+
 --BRACKETS, PARENTHESES, AND DELIMITERS (NOTE: THE \LEFT \RIGHT COMMAND AUTOMATICALLY ADJUST THE SIZE OF THE DELIMITERS TO MATCH THE HEIGHT OF THE CONTENT INSIDE THEM.
 
 s({trig="rb",dscr="Parentheses (Round brackets)",wordTrig= false},fmta([[
