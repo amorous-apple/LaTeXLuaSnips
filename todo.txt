@@ -33,3 +33,6 @@
 - Test environment snippet (for writing text inside a math environment). 
 - Logarithms
 - Hat triggers 
+- Fix degree symbol to be in exponent
+- Add partial fractions and complete derivative fractions
+- 
