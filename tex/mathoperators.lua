@@ -115,7 +115,7 @@ fmta("_{<>}",{i(1)}),{condition = in_mathzone}),
 s({trig="int",snippetType="autosnippet",dscr="Integral operator",wordTrig = false},
 fmta("\\int_{<>}^{<>} {<>} \\,d<>",{i(1),i(2),i(3),i(4)}),{condition = in_mathzone}),
 
-s({trig="iint",snippetType="autosnippet",dscr="Double Integral operator",wordTrig = false},
+s({trig="iint",snippetType="autosnippet",priority= 1001,dscr="Double Integral operator",wordTrig = false},
 fmta("\\iint_{<>} {<>} \\,d<> \\,d<>",{i(1),i(2),i(3),i(4)}),{condition = in_mathzone}),
 
 s({trig="fint",snippetType="autosnippet",priority=1001,dscr="Integral operator from -inf to inf (full integral)",wordTrig = false},
