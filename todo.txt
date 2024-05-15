@@ -5,9 +5,9 @@
 - DONE try: "ee" Exp function shortcut Lists
 - DONE try: "hb" hbar?
 - DONE try: ";O, ;o"Theta symbol? 
-- Sum conflicts with su
+- DONE Changed exponent operator from su to du. Sum conflicts with su.
+- DONE Trig functions
 - Other conflicts (commented out)
-- Trig functions
 - Perhaps reformat integrals to move variable of integration in front of the argument. (For dealing with integrals of multiple variables)
 - Symbols to show about/ approximately.
 - Units
@@ -16,4 +16,7 @@
 - Much greater than/ much less than (<< and >>)
 - >= and <=
 - Must be equal to symbol
-
+- Degree symbol
+- Element of symbols from math
+- 3x1, 4x1 Matrices
+- 1x3, 1x4 Matrices
