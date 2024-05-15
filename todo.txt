@@ -7,16 +7,19 @@
 - DONE try: ";O, ;o"Theta symbol? 
 - DONE Changed exponent operator from su to du. Sum conflicts with su.
 - DONE Trig functions
+- DONE package babel Package to use symbols with accent in math mode (for typingig in German/ Spanish)
+- DONE try: "ab" (angle brackets) <> bracket environment (for time averages over time). 
+- DONE try: "deg" Degree symbol
+- DONE try "prop" Proportional to symbol
+- DONE try: "la,ra,La,Ra"Normal arrow (like in limits)
 - Other conflicts (commented out)
 - Perhaps reformat integrals to move variable of integration in front of the argument. (For dealing with integrals of multiple variables)
 - Symbols to show about/ approximately.
 - Units
-- Normal arrow (like in limits)
 - Limit notation
 - Much greater than/ much less than (<< and >>)
 - >= and <=
 - Must be equal to symbol
-- Degree symbol
 - Element of symbols from math
 - 3x1, 4x1 Matrices
 - 1x3, 1x4 Matrices
@@ -30,6 +33,3 @@
 - Test environment snippet (for writing text inside a math environment). 
 - Logarithms
 - Hat triggers 
-- <> bracket environment (for time averages over time). 
-- Package to use symbols with accent in math mode (for typingig in German/ Spanish)
-- Proportional to symbol

@@ -165,17 +165,28 @@ s({trig="hb",snippetType= "autosnippet",dscr= "Plank constant 'hbar'",wordTrig =
       t("\\hbar"),
   },{condition = in_mathzone}),
 
-s({trig="la",snippetType= "autosnippet",dscr= "Left arrow",wordTrig = false},
+s({trig="La",snippetType= "autosnippet",dscr= "Left arrow",wordTrig = false},
     {
       t("\\Leftarrow"),
   },{condition = in_mathzone}),
 
-s({trig="ra",snippetType= "autosnippet",dscr= "Right arrow",wordTrig = false},
+s({trig="Ra",snippetType= "autosnippet",dscr= "Right arrow",wordTrig = false},
     {
       t("\\Rightarrow"),
   },{condition = in_mathzone}),
 
-s({trig="lra",snippetType= "autosnippet",dscr= "Left Right arrow",wordTrig = false},
+s({trig="la",snippetType= "autosnippet",dscr= "Left arrow",wordTrig = false},
+    {
+      t("\\leftarrow"),
+  },{condition = in_mathzone}),
+
+s({trig="ra",snippetType= "autosnippet",dscr= "Right arrow",wordTrig = false},
+    {
+      t("\\rightarrow"),
+  },{condition = in_mathzone}),
+
+
+s({trig="lra",snippetType= "autosnippet", priority = 1001 ,dscr= "Left Right arrow",wordTrig = false},
     {
       t("\\Leftrightarrow"),
   },{condition = in_mathzone}),
@@ -188,6 +199,21 @@ s({trig="perp",snippetType= "autosnippet",dscr= "perpendicular symbol",wordTrig 
 s({trig="neq",snippetType= "autosnippet",dscr= "not equal sign",wordTrig = false},
     {
       t("\\neq"),
+  },{condition = in_mathzone}),
+
+s({trig="deg",snippetType= "autosnippet",dscr= "degree",wordTrig = false},
+    {
+      t("\\circ"),
+  },{condition = in_mathzone}),
+
+s({trig="prop",snippetType= "autosnippet",dscr= "proportional to",wordTrig = false},
+    {
+      t("\\propto"),
+  },{condition = in_mathzone}),
+
+s({trig="box",snippetType= "autosnippet",dscr= "box",wordTrig = false},
+    {
+      t("\\Box"),
   },{condition = in_mathzone}),
 
 
