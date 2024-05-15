@@ -20,3 +20,16 @@
 - Element of symbols from math
 - 3x1, 4x1 Matrices
 - 1x3, 1x4 Matrices
+- dt snippet conflict with dt differential element! 
+- add boxes
+- rla and lra both cause conflicts (do not trigger double-sided arrow)
+- Image insertion and management? 
+- Subsections
+- "Defined as" symbol (equal sign with three lines) 
+- Cdot snippet
+- Test environment snippet (for writing text inside a math environment). 
+- Logarithms
+- Hat triggers 
+- <> bracket environment (for time averages over time). 
+- Package to use symbols with accent in math mode (for typingig in German/ Spanish)
+- Proportional to symbol
