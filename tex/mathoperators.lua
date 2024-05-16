@@ -131,6 +131,9 @@ fmta("e^{<>} <>",{i(1),i(0)}),{condition = in_mathzone}),
 s({trig="ind",snippetType="autosnippet",dscr="exponential indices",wordTrig = false},
 fmta("\\indices{<>}<>",{i(1),i(0)}),{condition = in_mathzone}),
 
+s({trig="lim",snippetType="autosnippet",dscr="limit operator",wordTrig = false},
+fmta("\\lim_{<> \\to <>} <> <>",{i(1),i(2),i(3),i(0)}),{condition = in_mathzone}),
+
 
 
 
@@ -213,6 +216,16 @@ s({trig="prop",snippetType= "autosnippet",dscr= "proportional to",wordTrig = fal
 s({trig="box",snippetType= "autosnippet",dscr= "box",wordTrig = false},
     {
       t("\\Box"),
+  },{condition = in_mathzone}),
+
+s({trig="fa",snippetType= "autosnippet",dscr= "for all",wordTrig = false},
+    {
+      t("\\forall"),
+  },{condition = in_mathzone}),
+
+s({trig="in",snippetType= "autosnippet",dscr= "in",wordTrig = false},
+    {
+      t("\\in"),
   },{condition = in_mathzone}),
 
 

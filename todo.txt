@@ -16,16 +16,17 @@
 - DONE "removed autotrigger function"  dt snippet conflict with dt differential element! 
 - DONE Fix degree symbol to be in exponent
 - DONE try: tff and pff.Add partial fractions and complete derivative fractions
+- DONE try: "lim" Limit notation
+- DONE try: "in" Element of symbols from math
+- DONE try: ind Horizontally seperated indices for tensor notation!! 
 
 
 - Other conflicts (commented out)
 - Symbols to show about/ approximately.
 - Units
-- Limit notation
 - Much greater than/ much less than (<< and >>)
 - >= and <=
 - Must be equal to symbol
-- Element of symbols from math
 - 3x1, 4x1 Matrices
 - 1x3, 1x4 Matrices
 - add boxes (box environment to contain equations)
@@ -34,4 +35,3 @@
 - "Defined as" symbol (equal sign with three lines) 
 - Text environment snippet (for writing text inside a math environment). 
 - Logarithms
-- Horizontally seperated indices for tensor notation!! 
