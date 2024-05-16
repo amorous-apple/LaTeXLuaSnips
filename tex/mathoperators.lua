@@ -62,7 +62,14 @@ fmta("\\vec{<>}",{i(1)}),{condition = in_mathzone}),
 
 --MATHEMATICAL OPERATORS.
 
-s({trig = "ff",snippetType="autosnippet",dscr= "fraction operator",wordTrig = false},fmta( "\\frac{<>}{<>}",{i(1),i(2)}),{condition = in_mathzone}),
+s({trig = "ff",snippetType="autosnippet",dscr= "fraction operator",wordTrig = false},
+fmta( "\\frac{<>}{<>}",{i(1),i(2)}),{condition = in_mathzone}),
+
+s({trig = "pff",snippetType="autosnippet",priority=1001,dscr= "partial fraction operator",wordTrig = false},
+fmta( "\\frac{\\partial <>}{\\partial <>}",{i(1),i(2)}),{condition = in_mathzone}),
+
+s({trig = "ppff",snippetType="autosnippet",priority=1002,dscr= "partial partial fraction operator",wordTrig = false},
+fmta( "\\frac{\\partial <>}{\\partial \\left(\\partial_{<>} <>\\right)}",{i(1),i(2),i(3)}),{condition = in_mathzone}),
 
 s({trig="sqrt",snippetType="autosnippet",dscr="sqrt snippet.",wordTrig = false},
 fmta("\\sqrt{<>}",{i(1)}),{condition = in_mathzone}),
