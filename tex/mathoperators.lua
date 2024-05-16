@@ -129,6 +129,9 @@ fmta("\\sum_{<>}^{<>} {<>} ",{i(1),i(2),i(3)}),{condition = in_mathzone}),
 s({trig="ee",snippetType="autosnippet",dscr="exponential function",wordTrig = false},
 fmta("e^{<>} <>",{i(1),i(0)}),{condition = in_mathzone}),
 
+s({trig="ind",snippetType="autosnippet",dscr="exponential indices",wordTrig = false},
+fmta("\\indices{<>}<>",{i(1),i(0)}),{condition = in_mathzone}),
+
 
 
 

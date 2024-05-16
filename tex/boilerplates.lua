@@ -9,6 +9,7 @@ return {
 				\usepackage[margin=1in]{geometry} 
 				\usepackage{amsmath,amsthm,amssymb}
 				\usepackage[german,spanish]{babel}
+				\usepackage{tensor}
 				\usepackage[T1]{fontenc}
 				\newenvironment{ex}[2][Exercise]{\begin{trivlist}
 				\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
