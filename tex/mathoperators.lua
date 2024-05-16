@@ -42,7 +42,8 @@ return{
 s({trig="til",snippetType="autosnippet",dscr="Tilde accent (Transposed operators)",wordTrig = false},
 fmta("\\tilde{<>}",{i(1)}),{condition = in_mathzone}),
 
-s({trig="dt",snippetType="autosnippet",dscr="dot accent (Time derivative)",wordTrig = false},
+--Removed autosnippet function until we find a solution to avoid dt triggering in fractions
+s({trig="dt",dscr="dot accent (Time derivative)",wordTrig = false},
 fmta("\\dot{<>}",{i(1)}),{condition = in_mathzone}),
 
 -- Priority altered to prevent the triggering of dt.
@@ -64,6 +65,9 @@ fmta("\\vec{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig = "ff",snippetType="autosnippet",dscr= "fraction operator",wordTrig = false},
 fmta( "\\frac{<>}{<>}",{i(1),i(2)}),{condition = in_mathzone}),
+
+s({trig = "tff",snippetType="autosnippet",priority=1001,dscr= "total derivative operator",wordTrig = false},
+fmta( "\\frac{d<>}{d<>}",{i(1),i(2)}),{condition = in_mathzone}),
 
 s({trig = "pff",snippetType="autosnippet",priority=1001,dscr= "partial fraction operator",wordTrig = false},
 fmta( "\\frac{\\partial <>}{\\partial <>}",{i(1),i(2)}),{condition = in_mathzone}),
@@ -97,21 +101,12 @@ fmta("\\partial_{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="pu",snippetType="autosnippet",dscr="partial derivative up",wordTrig = false},
 fmta("\\partial^{<>}",{i(1)}),{condition = in_mathzone}),
-
+--Might we worth to delete the following to, since the advantage over typing pd is not substantial
 s({trig="pt",snippetType="autosnippet",dscr="Partial_time operator",wordTrig = false},
 fmta("\\partial_{t}{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="px",snippetType="autosnippet",dscr="Partial_x operator",wordTrig = false},
 fmta("\\partial_{x}{<>}",{i(1)}),{condition = in_mathzone}),
-
---s({trig="pd",snippetType="autosnippet",dscr="Partial derivative leibniz notation",wordTrig = false},
---fmta("\\fracc{\\partial<>}{\\partial<>}",{i(1),i(2)}),{condition = in_mathzone}),
---
---s({trig="pdt",snippetType="autosnippet",dscr=" Time Partial derivative leibniz notation",wordTrig = false},
---fmta("\\fracc{\\partial<>}{\\partial t}",{i(1)}),{condition = in_mathzone}),
---
---s({trig="pdx",snippetType="autosnippet",dscr="Position Partial derivative leibniz notation",wordTrig = false},
---fmta("\\fracc{\\partial<>}{\\partial x}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="du",snippetType="autosnippet",dscr="Exponent operator (superscript)",wordTrig = false},
 fmta("^{<>}",{i(1)}),{condition = in_mathzone}),
