@@ -12,6 +12,8 @@
 - DONE try: "deg" Degree symbol
 - DONE try "prop" Proportional to symbol
 - DONE try: "la,ra,La,Ra"Normal arrow (like in limits)
+- DONE now triggered with lra. rla and lra both cause conflicts (do not trigger double-sided arrow)
+
 - Other conflicts (commented out)
 - Perhaps reformat integrals to move variable of integration in front of the argument. (For dealing with integrals of multiple variables)
 - Symbols to show about/ approximately.
@@ -25,14 +27,11 @@
 - 1x3, 1x4 Matrices
 - dt snippet conflict with dt differential element! 
 - add boxes
-- rla and lra both cause conflicts (do not trigger double-sided arrow)
 - Image insertion and management? 
 - Subsections
 - "Defined as" symbol (equal sign with three lines) 
-- Cdot snippet
-- Test environment snippet (for writing text inside a math environment). 
+- Text environment snippet (for writing text inside a math environment). 
 - Logarithms
-- Hat triggers 
 - Fix degree symbol to be in exponent
 - Add partial fractions and complete derivative fractions
 - 

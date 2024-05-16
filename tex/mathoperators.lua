@@ -233,7 +233,7 @@ fmta("\\mathfrak{<>}",{i(1)}),{condition = in_mathzone}),
 
 --MATHEMATICAL FUNCTIONS (TRIG. FUNCTIONS, ETC.)
 
-s({trig="sin",snippetType="autosnippet",priority=1000,dscr="sin function",wordTrig = false},
+	s({trig="sin",snippetType="autosnippet",priority=1000,dscr="sin function",wordTrig = false},
 fmta("\\sin{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="cos",snippetType="autosnippet",priority=1000,dscr="cos function",wordTrig = false},
