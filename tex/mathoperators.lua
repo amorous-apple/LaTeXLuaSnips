@@ -205,7 +205,7 @@ s({trig="neq",snippetType= "autosnippet",dscr= "not equal sign",wordTrig = false
 
 s({trig="deg",snippetType= "autosnippet",dscr= "degree",wordTrig = false},
     {
-      t("\\circ"),
+      t("^{\\circ}"),
   },{condition = in_mathzone}),
 
 s({trig="prop",snippetType= "autosnippet",dscr= "proportional to",wordTrig = false},

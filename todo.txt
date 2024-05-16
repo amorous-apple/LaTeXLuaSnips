@@ -13,6 +13,10 @@
 - DONE try "prop" Proportional to symbol
 - DONE try: "la,ra,La,Ra"Normal arrow (like in limits)
 - DONE now triggered with lra. rla and lra both cause conflicts (do not trigger double-sided arrow)
+- DONE "removed autotrigger function"  dt snippet conflict with dt differential element! 
+- DONE Fix degree symbol to be in exponent
+- DONE try: tff and pff.Add partial fractions and complete derivative fractions
+
 
 - Other conflicts (commented out)
 - Perhaps reformat integrals to move variable of integration in front of the argument. (For dealing with integrals of multiple variables)
@@ -25,13 +29,10 @@
 - Element of symbols from math
 - 3x1, 4x1 Matrices
 - 1x3, 1x4 Matrices
-- dt snippet conflict with dt differential element! 
 - add boxes
 - Image insertion and management? 
 - Subsections
 - "Defined as" symbol (equal sign with three lines) 
 - Text environment snippet (for writing text inside a math environment). 
 - Logarithms
-- Fix degree symbol to be in exponent
-- Add partial fractions and complete derivative fractions
 - Horizontally seperated indices for tensor notation!! 
