@@ -1,6 +1,6 @@
 -- Include this `in_mathzone` function at the start of a snippets file...
 local in_mathzone = function()
-  -- The `in_mathzone` function requires the VimTeX plugin
+-- The `in_mathzone` function requires the VimTeX plugin
   return vim.fn['vimtex#syntax#in_mathzone']() == 1
 end
 -- Then pass the table `{condition = in_mathzone}` to any snippet you want to
@@ -22,7 +22,8 @@ s({trig = "([^%a])mm", wordTrig = false, regTrig = true},
     }
   )
 ),
--- A fun zero subscript snippet
+
+-- Add a 0 subscript when typing 00 after a letter. 
 s({trig = '([%a%)%]%}])00', regTrig = true, wordTrig = false, snippetType="autosnippet"},
   fmta(
     "<>_{<>}",
@@ -32,17 +33,38 @@ s({trig = '([%a%)%]%}])00', regTrig = true, wordTrig = false, snippetType="autos
     }
   )
 ),
--- Another take on the fraction snippet without using a regex trigger
-s({trig = "abc", snippetType="autosnippet"},
+
+-- Add a 1 subscript when typing 11 after a letter. 
+s({trig = '([%a%)%]%}])11', regTrig = true, wordTrig = false, snippetType="autosnippet"},
   fmta(
-    "\\frac{<>}{<>}",
+    "<>_{<>}",
     {
-      i(1),
-      i(2),
+      f( function(_, snip) return snip.captures[1] end ),
+      t("1")
     }
-  ),
-  {condition = in_mathzone}  -- `condition` option passed in the snippet `opts` table 
+  )
+),
+
+-- Add a 2 subscript when typing 22 after a letter. 
+s({trig = '([%a%)%]%}])22', regTrig = true, wordTrig = false, snippetType="autosnippet"},
+  fmta(
+    "<>_{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      t("2")
+    }
+  )
+),
+
+-- Add a 3 subscript when typing 33 after a letter. 
+s({trig = '([%a%)%]%}])33', regTrig = true, wordTrig = false, snippetType="autosnippet"},
+  fmta(
+    "<>_{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      t("3")
+    }
+  )
 ),
 
 }
-
