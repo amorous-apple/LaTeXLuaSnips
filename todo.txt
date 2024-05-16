@@ -19,7 +19,6 @@
 
 
 - Other conflicts (commented out)
-- Perhaps reformat integrals to move variable of integration in front of the argument. (For dealing with integrals of multiple variables)
 - Symbols to show about/ approximately.
 - Units
 - Limit notation

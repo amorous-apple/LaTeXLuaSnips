@@ -160,11 +160,6 @@ s({trig="par",snippetType= "autosnippet",dscr= "Partial",wordTrig = false},
       t("\\partial"),
   },{condition = in_mathzone}),
 
-s({trig="pi",snippetType= "autosnippet",dscr= "Partial",wordTrig = false},
-    {
-      t("\\pi"),
-  },{condition = in_mathzone}),
-
 s({trig="hb",snippetType= "autosnippet",dscr= "Plank constant 'hbar'",wordTrig = false},
     {
       t("\\hbar"),
