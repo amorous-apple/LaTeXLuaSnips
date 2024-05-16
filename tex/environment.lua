@@ -106,4 +106,37 @@ s({trig="db",dscr="double vertical Brackets",wordTrig= false},fmta([[
 \left| <> \right| <>
 ]],{i(1),i(0)})),
 
+----------------------------------------------INSIDE MATH ENVIRONMENTS/COMMANDS-----------------------------------------------------
+
+s({trig="boxed",dscr="Boxed equation command",wordTrig= false},fmta([[
+\\boxed{<>} <>
+]],{i(1),i(0)})),
+
+s({trig="txt",dscr="normal text inside math environment",wordTrig= false},fmta([[
+\\text{<>} <>
+]],{i(1),i(0)})),
+
+s({trig="2fun",dscr="piecewise function with 2 cases",wordTrig= false},fmta([[
+\begin{cases}
+        <> & \text{if } <> \in <> \\
+        <> & \text{if } <> \in <> 
+    \end{cases}<>
+]],{i(1),i(2),i(3),i(4),i(5),i(6),i(0)})),
+
+s({trig="3fun",dscr="piecewise function with 2 cases",wordTrig= false},fmta([[
+\begin{cases}
+        <> & \text{if } <> \in <> \\
+        <> & \text{if } <> \in <> \\
+	<> & \text{if } <> \in <> 
+    \end{cases}<>
+]],{i(1),i(2),i(3),i(4),i(5),i(6),i(7),i(8),i(9),i(0)})),
+
+
+
+
+
+
+
+
+
 }

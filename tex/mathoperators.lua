@@ -213,7 +213,7 @@ s({trig="prop",snippetType= "autosnippet",dscr= "proportional to",wordTrig = fal
       t("\\propto"),
   },{condition = in_mathzone}),
 
-s({trig="box",snippetType= "autosnippet",dscr= "box",wordTrig = false},
+s({trig="box",dscr= "box",wordTrig = false},
     {
       t("\\Box"),
   },{condition = in_mathzone}),
