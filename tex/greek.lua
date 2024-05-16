@@ -124,6 +124,10 @@
     {
       t("\\Sigma"),
   }),
+  s({trig=";S", snippetType="autosnippet",wordTrig = false},
+    {
+      t("\\Sigma"),
+  }),
   
   s({trig=";t", snippetType="autosnippet",wordTrig = false},
     {
