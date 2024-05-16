@@ -28,7 +28,7 @@
 - Element of symbols from math
 - 3x1, 4x1 Matrices
 - 1x3, 1x4 Matrices
-- add boxes
+- add boxes (box environment to contain equations)
 - Image insertion and management? 
 - Subsections
 - "Defined as" symbol (equal sign with three lines) 
