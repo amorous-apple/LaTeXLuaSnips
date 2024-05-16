@@ -34,4 +34,4 @@
 - Logarithms
 - Fix degree symbol to be in exponent
 - Add partial fractions and complete derivative fractions
-- 
+- Horizontally seperated indices for tensor notation!! 

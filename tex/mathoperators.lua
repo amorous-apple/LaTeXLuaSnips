@@ -89,7 +89,7 @@ s({trig="pd",snippetType="autosnippet",dscr="partial derivative down",wordTrig =
 fmta("\\partial_{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="pu",snippetType="autosnippet",dscr="partial derivative up",wordTrig = false},
-fmta("\\partial_{<>}",{i(1)}),{condition = in_mathzone}),
+fmta("\\partial^{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="pt",snippetType="autosnippet",dscr="Partial_time operator",wordTrig = false},
 fmta("\\partial_{t}{<>}",{i(1)}),{condition = in_mathzone}),
