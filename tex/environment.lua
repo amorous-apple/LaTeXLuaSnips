@@ -109,7 +109,7 @@ s({trig="db",dscr="double vertical Brackets",wordTrig= false},fmta([[
 ----------------------------------------------INSIDE MATH ENVIRONMENTS/COMMANDS-----------------------------------------------------
 
 s({trig="boxed",dscr="Boxed equation command",wordTrig= false},fmta([[
-\\boxed{<>} <>
+\boxed{<>} <>
 ]],{i(1),i(0)})),
 
 s({trig="txt",dscr="normal text inside math environment",wordTrig= false},fmta([[
