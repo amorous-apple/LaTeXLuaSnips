@@ -223,7 +223,7 @@ s({trig="fa",snippetType= "autosnippet",dscr= "for all",wordTrig = false},
       t("\\forall"),
   },{condition = in_mathzone}),
 
-s({trig="in",snippetType= "autosnippet",dscr= "in",wordTrig = false},
+s({trig="in",dscr= "in",wordTrig = false},
     {
       t("\\in"),
   },{condition = in_mathzone}),
