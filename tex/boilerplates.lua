@@ -8,7 +8,7 @@ return {
 
 				\usepackage[margin=1in]{geometry} 
 				\usepackage{amsmath,amsthm,amssymb}
-				\usepackage[german,spanish]{babel}
+				\usepackage[german,spanish,english]{babel}
 				\usepackage{tensor}
 				\usepackage[T1]{fontenc}
 				\newenvironment{ex}[2][Exercise]{\begin{trivlist}
