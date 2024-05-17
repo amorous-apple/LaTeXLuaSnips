@@ -35,3 +35,6 @@
 - Subsections
 - "Defined as" symbol (equal sign with three lines) 
 - Logarithms
+- Multi-line boxes.
+- ^2 and ^3 shortcuts as well as d^2 x/ d x^2 snippit
+- Itemize, enumerate, and item snippits. 

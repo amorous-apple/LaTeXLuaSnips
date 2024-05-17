@@ -113,7 +113,7 @@ s({trig="boxed",dscr="Boxed equation command",wordTrig= false},fmta([[
 ]],{i(1),i(0)})),
 
 s({trig="txt",dscr="normal text inside math environment",wordTrig= false},fmta([[
-\\text{<>} <>
+\text{<>} <>
 ]],{i(1),i(0)})),
 
 s({trig="2fun",dscr="piecewise function with 2 cases",wordTrig= false},fmta([[
