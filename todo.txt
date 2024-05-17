@@ -21,21 +21,21 @@
 - DONE try: ind Horizontally seperated indices for tensor notation!! 
 - DONE try: "boxed"add boxes (box environment to contain equations)
 - DONE try: "txt" Text environment snippet (for writing text inside a math environment). 
+- DONE Symbols to show about/ approximately.
+- DONE Much greater than/ much less than (<< and >>)
+- DONE >= and <=
+- DONE "Defined as" symbol (equal sign with three lines) 
+- DONE ^2 and ^3 shortcuts as well as d^2 x/ d x^2 snippit and par^2 x/ par t^2 snippits
+- DONE +/- symbol
+- DONE Subsections
 
 
 - Other conflicts (commented out)
-- Symbols to show about/ approximately.
 - Units
-- Much greater than/ much less than (<< and >>)
-- >= and <=
 - Must be equal to symbol
 - 3x1, 4x1 Matrices
 - 1x3, 1x4 Matrices
 - Image insertion and management? 
-- Subsections
-- "Defined as" symbol (equal sign with three lines) 
 - Logarithms
 - Multi-line boxes.
-- ^2 and ^3 shortcuts as well as d^2 x/ d x^2 snippit and par^2 x/ par t^2 snippits
 - Itemize, enumerate, and item snippits. 
-- +/- symbol

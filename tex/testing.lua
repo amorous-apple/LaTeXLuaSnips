@@ -67,4 +67,48 @@ s({trig = '([%a%)%]%}])33', regTrig = true, wordTrig = false, snippetType="autos
   )
 ),
 
+-- Add a x subscript when typing xx after a letter. 
+s({trig = '([%a%)%]%}])xx', regTrig = true, wordTrig = false, snippetType="autosnippet"},
+  fmta(
+    "<>_{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      t("x")
+    }
+  )
+),
+
+-- Add a y subscript when typing yy after a letter. 
+s({trig = '([%a%)%]%}])yy', regTrig = true, wordTrig = false, snippetType="autosnippet"},
+  fmta(
+    "<>_{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      t("y")
+    }
+  )
+),
+
+-- Add a z subscript when typing zz after a letter. 
+s({trig = '([%a%)%]%}])zz', regTrig = true, wordTrig = false, snippetType="autosnippet"},
+  fmta(
+    "<>_{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      t("z")
+    }
+  )
+),
+
+-- Add a m subscript when typing mm after a letter. 
+s({trig = '([%a%)%]%}])mm', regTrig = true, wordTrig = false, snippetType="autosnippet"},
+  fmta(
+    "<>_{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      t("m")
+    }
+  )
+),
+
 }

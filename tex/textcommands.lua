@@ -26,4 +26,11 @@ fmta([[
 \label{sec:<>}
 ]],{i(1),i(2)})),
 
+s({trig="ssec",priority = 1001, dscr="Expands 'ssec' into a subsection command with a lable command",wordTrig = false},
+fmta([[
+\subsection{<>}
+\label{sec:<>}
+]],{i(1),i(2)})),
+
+
 }

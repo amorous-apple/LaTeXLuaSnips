@@ -223,9 +223,134 @@ s({trig="fa",snippetType= "autosnippet",dscr= "for all",wordTrig = false},
       t("\\forall"),
   },{condition = in_mathzone}),
 
-s({trig="in",dscr= "in",wordTrig = false},
+s({trig="in",snippetType= "autosnippet",dscr= "in",wordTrig = false},
     {
       t("\\in"),
+  },{condition = in_mathzone}),
+
+s({trig="Re",snippetType= "autosnippet",dscr= "Real numbers",wordTrig = false},
+    {
+      t("\\Re"),
+  },{condition = in_mathzone}),
+
+s({trig="Im",snippetType= "autosnippet",dscr= "Imaginary numbers",wordTrig = false},
+    {
+      t("\\Im"),
+  },{condition = in_mathzone}),
+
+s({trig="sR",snippetType= "autosnippet",dscr= "The set of real numbers.",wordTrig = false},
+    {
+      t("\\mathbb{R}"),
+  },{condition = in_mathzone}),
+
+s({trig="sN",snippetType= "autosnippet",dscr= "The set of natural numbers.",wordTrig = false},
+    {
+      t("\\mathbb{N}"),
+  },{condition = in_mathzone}),
+
+s({trig="sZ",snippetType= "autosnippet",dscr= "The set of integers.",wordTrig = false},
+    {
+      t("\\mathbb{Z}"),
+  },{condition = in_mathzone}),
+
+s({trig="sQ",snippetType= "autosnippet",dscr= "The set of rational numbers.",wordTrig = false},
+    {
+      t("\\mathbb{Q}"),
+  },{condition = in_mathzone}),
+
+s({trig="sC",snippetType= "autosnippet",dscr= "The set of complex numbers.",wordTrig = false},
+    {
+      t("\\mathbb{C}"),
+  },{condition = in_mathzone}),
+
+s({trig="ex",snippetType= "autosnippet",dscr= "'There exists' symbol.",wordTrig = false},
+    {
+      t("\\exists"),
+  },{condition = in_mathzone}),
+
+s({trig="nex",snippetType= "autosnippet",priority = 1001, dscr= "'There does not exist' symbol.",wordTrig = false},
+    {
+      t("\\nexists"),
+  },{condition = in_mathzone}),
+
+s({trig="oex",snippetType= "autosnippet",priority = 1001, dscr= "There exists one and only one. ",wordTrig = false},
+    {
+      t("\\exists!"),
+  },{condition = in_mathzone}),
+
+s({trig="nul",snippetType= "autosnippet",dscr= "Empty set symbol. (Short for null)",wordTrig = false},
+    {
+      t("\\emptyset"),
+  },{condition = in_mathzone}),
+
+s({trig="qed",snippetType= "autosnippet",dscr= "Inserts an 'end-of-proof' box.",wordTrig = false},
+    {
+      t("\\square"),
+  },{condition = in_mathzone}),
+
+s({trig="cross",snippetType= "autosnippet",dscr= "Inserts the times/ cross product symbol. ",wordTrig = false},
+    {
+      t("\\times"),
+  },{condition = in_mathzone}),
+
+s({trig="leq",snippetType= "autosnippet",dscr= "Less than or equal to symbol.",wordTrig = false},
+    {
+      t("\\leq"),
+  },{condition = in_mathzone}),
+
+s({trig="geq",snippetType= "autosnippet",dscr= "Greater than or equal to symbol",wordTrig = false},
+    {
+      t("\\geq"),
+  },{condition = in_mathzone}),
+
+s({trig="nin",snippetType= "autosnippet",priority = 1001, dscr= "'Not in' symbol.",wordTrig = false},
+    {
+      t("\\notin"),
+  },{condition = in_mathzone}),
+
+s({trig="app",snippetType= "autosnippet",dscr= "Approximately symbol.",wordTrig = false},
+    {
+      t("\\approx"),
+  },{condition = in_mathzone}),
+
+s({trig="def",snippetType= "autosnippet",dscr= "'Defined as' symbol.",wordTrig = false},
+    {
+      t("\\equiv"),
+  },{condition = in_mathzone}),
+
+s({trig="ez",snippetType= "autosnippet",dscr= "Exponent of 'zwei' snippit (power of two).",wordTrig = false},
+    {
+      t("^{2}"),
+  },{condition = in_mathzone}),
+
+s({trig="ed",snippetType= "autosnippet",dscr= "Exponent of 'drei' snippit (power of three)",wordTrig = false},
+    {
+      t("^{3}"),
+  },{condition = in_mathzone}),
+
+s({trig="gg",snippetType= "autosnippet",dscr= "Much greater than symbol.",wordTrig = false},
+    {
+      t("\\gg"),
+  },{condition = in_mathzone}),
+
+s({trig="ll",snippetType= "autosnippet",dscr= "Much less than symbol.",wordTrig = false},
+    {
+      t("\\ll"),
+  },{condition = in_mathzone}),
+
+s({trig="pm",snippetType= "autosnippet",dscr= "Plus/ Minus symbol.",wordTrig = false},
+    {
+      t("\\pm"),
+  },{condition = in_mathzone}),
+
+s({trig="mp",snippetType= "autosnippet",dscr= "Minus/ Plus symbol.",wordTrig = false},
+    {
+      t("\\mp"),
+  },{condition = in_mathzone}),
+
+s({trig="dag",snippetType= "autosnippet",dscr= "Dagger symbol.",wordTrig = false},
+    {
+      t("\\dagger"),
   },{condition = in_mathzone}),
 
 
@@ -238,7 +363,7 @@ fmta("\\mathcal{<>}",{i(1)}),{condition = in_mathzone}),
 s({trig="mfb",snippetType="autosnippet",dscr="Math font-> Bold",wordTrig = false},
 fmta("\\mathbb{<>}",{i(1)}),{condition = in_mathzone}),
 
-s({trig="mff",snippetType="autosnippet",dscr="Math font-> frak",wordTrig = false},
+s({trig="mff",snippetType="autosnippet",priority = 1001, dscr="Math font-> frak",wordTrig = false},
 fmta("\\mathfrak{<>}",{i(1)}),{condition = in_mathzone}),
 
 
