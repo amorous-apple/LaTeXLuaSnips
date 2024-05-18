@@ -120,7 +120,7 @@ s({trig="iint",snippetType="autosnippet",priority= 1001,dscr="Double Integral op
 fmta("\\iint_{<>} {<>} \\,d<> \\,d<>",{i(1),i(2),i(3),i(4)}),{condition = in_mathzone}),
 
 s({trig="fint",snippetType="autosnippet",priority=1001,dscr="Integral operator from -inf to inf (full integral)",wordTrig = false},
-fmta("\\int_{\\inf}^{-\\inf} {<>} \\,d<>",{i(1),i(2)}),{condition = in_mathzone}),
+fmta("\\int_{\\infty}^{-\\infty} {<>} \\,d<>",{i(1),i(2)}),{condition = in_mathzone}),
 
 s({trig="sum",snippetType="autosnippet",dscr="Sum operator",wordTrig = false},
 fmta("\\sum_{<>}^{<>} {<>} ",{i(1),i(2),i(3)}),{condition = in_mathzone}),
@@ -223,7 +223,7 @@ s({trig="fa",snippetType= "autosnippet",dscr= "for all",wordTrig = false},
       t("\\forall"),
   },{condition = in_mathzone}),
 
-s({trig="in",snippetType= "autosnippet",dscr= "in",wordTrig = false},
+s({trig="in",priority= 900, dscr= "in",wordTrig = false},
     {
       t("\\in"),
   },{condition = in_mathzone}),
@@ -303,7 +303,7 @@ s({trig="geq",snippetType= "autosnippet",dscr= "Greater than or equal to symbol"
       t("\\geq"),
   },{condition = in_mathzone}),
 
-s({trig="nin",snippetType= "autosnippet",priority = 1001, dscr= "'Not in' symbol.",wordTrig = false},
+s({trig="nin",priority = 1001, dscr= "'Not in' symbol.",wordTrig = false},
     {
       t("\\notin"),
   },{condition = in_mathzone}),
