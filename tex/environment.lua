@@ -108,7 +108,7 @@ s({trig="db",dscr="double vertical Brackets",wordTrig= false},fmta([[
 
 ----------------------------------------------INSIDE MATH ENVIRONMENTS/COMMANDS-----------------------------------------------------
 
-s({trig="boxed",dscr="Boxed equation command",wordTrig= false},fmta([[
+s({trig="boxed",snippetType= "autosnippet",dscr="Boxed equation command",wordTrig= false},fmta([[
 \boxed{<>} <>
 ]],{i(1),i(0)})),
 

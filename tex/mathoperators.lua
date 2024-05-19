@@ -323,7 +323,7 @@ s({trig="ez",snippetType= "autosnippet",dscr= "Exponent of 'zwei' snippit (power
       t("^{2}"),
   },{condition = in_mathzone}),
 
-s({trig="ed",snippetType= "autosnippet",dscr= "Exponent of 'drei' snippit (power of three)",wordTrig = false},
+s({trig="ed",snippetType= "autosnippet",priority= 900, dscr= "Exponent of 'drei' snippit (power of three)",wordTrig = false},
     {
       t("^{3}"),
   },{condition = in_mathzone}),
