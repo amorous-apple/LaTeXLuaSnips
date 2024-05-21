@@ -32,5 +32,16 @@ fmta([[
 \label{sec:<>}
 ]],{i(1),i(2)})),
 
+s({trig="emph",dscr="emphasize",wordTrig = false},
+fmta("\\emph{<>}",{i(1)})),
+
+s({trig="bf",dscr="bold text",wordTrig = false},
+fmta("\\textbf{<>}",{i(1)})),
+
+s({trig="it",dscr="italic text",wordTrig = false},
+fmta("\\textit{<>}",{i(1)})),
+
+s({trig="undr",dscr="underlined text",wordTrig = false},
+fmta("\\underline{<>}",{i(1)})),
 
 }

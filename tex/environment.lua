@@ -79,6 +79,26 @@ s({trig="gatn", dscr="Expands 'gatn' into a (numbered) gather environment",wordT
      { i(1) }
   )
 ),
+s({trig="ali", dscr="Expands 'ali' into a (not-numbered) align environment",wordTrig = false},
+  fmta(
+     [[
+       \begin{align*}
+           <>
+       \end{align*}
+     ]],
+     { i(1) }
+  )
+),
+s({trig="alin", dscr="Expands 'alin' into a (numbered) align environment",wordTrig = false},
+  fmta(
+     [[
+       \begin{align}
+           <>
+       \end{align}
+     ]],
+     { i(1) }
+  )
+),
 
 --BRACKETS, PARENTHESES, AND DELIMITERS (NOTE: THE \LEFT \RIGHT COMMAND AUTOMATICALLY ADJUST THE SIZE OF THE DELIMITERS TO MATCH THE HEIGHT OF THE CONTENT INSIDE THEM.
 
