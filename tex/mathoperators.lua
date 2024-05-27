@@ -134,6 +134,10 @@ fmta("\\indices{<>}<>",{i(1),i(0)}),{condition = in_mathzone}),
 s({trig="lim",snippetType="autosnippet",dscr="limit operator",wordTrig = false},
 fmta("\\lim_{<> \\to <>} <> <>",{i(1),i(2),i(3),i(0)}),{condition = in_mathzone}),
 
+s({trig="det",snippetType= "autosnippet",dscr= "Adds the determinant in text form.",wordTrig = false},
+    {
+      t("\\text{det}"),
+  },{condition = in_mathzone}),
 
 
 

@@ -3,9 +3,9 @@ return {
 s({trig="eqn", dscr="Expands 'eq' into a (numbered) equation environment",wordTrig = false},
   fmta(
      [[
-       \begin{equation}
+\begin{equation}
 	<>
-       \end{equation}
+\end{equation}
      ]],
      { i(1) }
   )
@@ -14,13 +14,25 @@ s({trig="eqn", dscr="Expands 'eq' into a (numbered) equation environment",wordTr
 s({trig="eq", dscr="Expands 'eq' into a (non-numbered) equation environment",wordTrig = false},
   fmta(
      [[
-       \begin{equation*}
+\begin{equation*}
 	<>
-       \end{equation*}
+\end{equation*}
      ]],
      { i(1) }
   )
 ),
+
+s({trig="dmat", dscr="Expands 'dmat' into a (non-numbered) dmath environemtn (for multi-line equaitons)",wordTrig = false},
+  fmta(
+     [[
+\begin{dmath*}
+	<>
+\end{dmath*}
+     ]],
+     { i(1) }
+  )
+),
+
 s({trig="dm", dscr="inserts a display math (non-numbered equations) environment",wordTrig = false},
   fmta(
      [[
@@ -42,9 +54,9 @@ s({trig="im", dscr="Expands 'im' into an inline math environment",wordTrig = fal
 s({trig="begindoc", dscr="inserts begin/end doc environment",wordTrig = false},
   fmta(
      [[
-       \begin{document}
+\begin{document}
 	<>
-       \end{document}
+\end{document}
      ]],
      { i(1) }
   )
@@ -52,9 +64,9 @@ s({trig="begindoc", dscr="inserts begin/end doc environment",wordTrig = false},
 s({trig="beg", dscr="Inserts a begin{}/end{} environment",wordTrig = false},
   fmta(
      [[
-       \begin{<>}
+\begin{<>}
 	<>
-       \end{<>}
+\end{<>}
      ]],
      { i(1),i(0),rep(1) }
   )
@@ -62,9 +74,9 @@ s({trig="beg", dscr="Inserts a begin{}/end{} environment",wordTrig = false},
 s({trig="gat", dscr="Expands 'gat' into a (non-numbered) gather environment",wordTrig = false},
   fmta(
      [[
-	\begin{gather*}
+\begin{gather*}
 		<>
-	\end{gather*}
+\end{gather*}
      ]],
      { i(1) }
   )
@@ -72,9 +84,9 @@ s({trig="gat", dscr="Expands 'gat' into a (non-numbered) gather environment",wor
 s({trig="fla", dscr="Expands 'fla' into a (non-numbered) flalign environment",wordTrig = false},
   fmta(
      [[
-       \begin{flalign*}
-       	<>
-       \end{flalign*}
+\begin{flalign*}
+	<>
+\end{flalign*}
      ]],
      { i(1) }
   )
@@ -82,9 +94,9 @@ s({trig="fla", dscr="Expands 'fla' into a (non-numbered) flalign environment",wo
 s({trig="gatn", dscr="Expands 'gatn' into a (numbered) gather environment",wordTrig = false},
   fmta(
      [[
-       \begin{gather}
+\begin{gather}
 	<>
-       \end{gather}
+\end{gather}
      ]],
      { i(1) }
   )
@@ -92,9 +104,9 @@ s({trig="gatn", dscr="Expands 'gatn' into a (numbered) gather environment",wordT
 s({trig="ali", dscr="Expands 'ali' into a (not-numbered) align environment",wordTrig = false},
   fmta(
      [[
-       \begin{align*}
+\begin{align*}
 	<>
-       \end{align*}
+\end{align*}
      ]],
      { i(1) }
   )
@@ -102,13 +114,61 @@ s({trig="ali", dscr="Expands 'ali' into a (not-numbered) align environment",word
 s({trig="alin", dscr="Expands 'alin' into a (numbered) align environment",wordTrig = false},
   fmta(
      [[
-       \begin{align}
+\begin{align}
 	<>
-       \end{align}
+\end{align}
      ]],
      { i(1) }
   )
 ),
+
+s({trig="enuma", dscr="Expands 'enuma' into an alphabetical enumerate with an item.",wordTrig = false},
+  fmta(
+     [[
+\begin{enumerate}[label=(\alph*)]
+	\item <>
+\end{enumerate}
+     ]],
+     { i(1) }
+  )
+),
+
+s({trig="enumr", dscr="Expands 'enumr' into a lower case roman numeral enumerate with an item.",wordTrig = false},
+  fmta(
+     [[
+\begin{enumerate}[label=(\roman*)]
+	\item <>
+\end{enumerate}
+     ]],
+     { i(1) }
+  )
+),
+
+s({trig="ex", dscr="Adds an exercise environment",wordTrig = false},
+  fmta(
+     [[
+\begin{ex}
+	<>
+\end{ex}
+     ]],
+     { i(1) }
+  )
+),
+
+s({trig="sol", dscr="Adds a 'solution' environment. ",wordTrig = false},
+  fmta(
+     [[
+\begin{sol} <> \end{sol}
+<>
+     ]],
+     { i(1), i(2) }
+  )
+),
+
+s({trig="itm",snippetType= "autosnippet",dscr= "Adds an item for a list.",wordTrig = false},
+    {
+      t("\\item"),
+  }),
 
 --BRACKETS, PARENTHESES, AND DELIMITERS (NOTE: THE \LEFT \RIGHT COMMAND AUTOMATICALLY ADJUST THE SIZE OF THE DELIMITERS TO MATCH THE HEIGHT OF THE CONTENT INSIDE THEM.
 
@@ -150,7 +210,7 @@ s({trig="2fun",dscr="piecewise function with 2 cases",wordTrig= false},fmta([[
 \begin{cases}
         <> & \text{if } <> \in <> \\
         <> & \text{if } <> \in <> 
-    \end{cases}<>
+\end{cases}<>
 ]],{i(1),i(2),i(3),i(4),i(5),i(6),i(0)})),
 
 s({trig="3fun",dscr="piecewise function with 2 cases",wordTrig= false},fmta([[
@@ -158,7 +218,7 @@ s({trig="3fun",dscr="piecewise function with 2 cases",wordTrig= false},fmta([[
         <> & \text{if } <> \in <> \\
         <> & \text{if } <> \in <> \\
 	<> & \text{if } <> \in <> 
-    \end{cases}<>
+\end{cases}<>
 ]],{i(1),i(2),i(3),i(4),i(5),i(6),i(7),i(8),i(9),i(0)})),
 
 

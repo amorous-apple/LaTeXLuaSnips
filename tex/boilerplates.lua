@@ -11,6 +11,7 @@ return {
 				\usepackage[german,spanish,english]{babel}
 				\usepackage{tensor}
 				\usepackage[T1]{fontenc}
+				\usepackage{breqn}
 				\newenvironment{ex}[2][Exercise]{\begin{trivlist}
 				\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
 

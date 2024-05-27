@@ -32,6 +32,16 @@ fmta([[
 \label{sec:<>}
 ]],{i(1),i(2)})),
 
+s({trig="bru",dscr="Expands 'bru' into an underbrace and adds the comment. ",wordTrig = false},
+fmta([[
+\underbrace{<>}_{<>}
+]],{i(1),i(2)})),
+
+s({trig="bro",dscr="Expands 'bro' into an overbrace and adds the comment.",wordTrig = false},
+fmta([[
+\overbrace{<>}^{<>}
+]],{i(1),i(2)})),
+
 s({trig="emph",dscr="emphasize",wordTrig = false},
 fmta("\\emph{<>}",{i(1)})),
 
