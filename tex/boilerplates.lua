@@ -20,12 +20,15 @@ return {
 
 				\begin{document}
 				\noindent <> \hfill {\Large <>} \hfill \today
+
 				<>
+
 				\end{document}
 			]],
 			{ i(1, "Name"),i(2, "Title of the homework"),i(0) }
 	  	)
 	),
+
 	s({trig="booklet", dscr="A convienient, simple boilerplate to make a math booklet, ideal for texts shorter than books, but bigger than homeworks or articles."},
 		fmta([[
 			\documentclass{article}
