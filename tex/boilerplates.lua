@@ -21,13 +21,14 @@ return {
 
 
 				\begin{document}
-				\noindent <> \hfill {\Large <>} \hfill \today
+				\noindent <> \hfill \today \\[30pt]
+				\centerline{ \Large{ \textbf{ <> }}}
 
 				<>
 
 				\end{document}
 			]],
-			{ i(1, "Name"),i(2, "Title of the homework"),i(0) }
+			{ i(1, "Name(s)"),i(2, "Title of the homework"),i(0) }
 	  	)
 	),
 
