@@ -5,8 +5,9 @@ local in_mathzone = function()
 end
 -- Then pass the table `{condition = in_mathzone}` to any snippet you want to
 -- expand only in math contexts.
+--
+--
 return {
--- Examples of Greek letter snippets, autotriggered for efficiency
 s({trig=":exp", snippetType="autosnippet"},
   {
     t("Experiment Success."),
