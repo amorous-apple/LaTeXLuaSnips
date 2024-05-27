@@ -353,6 +353,10 @@ s({trig="dag",snippetType= "autosnippet",dscr= "Dagger symbol.",wordTrig = false
       t("\\dagger"),
   },{condition = in_mathzone}),
 
+s({trig="odt",snippetType= "autosnippet",priority=1001,dscr= "Odot symbol (e.g. Solar Masses)",wordTrig = false},
+    {
+      t("\\odot"),
+  },{condition = in_mathzone}),
 
 
 --MATHEMATICAL FONTS (ONLY TO BE USED IN MATH MODE!) MAYBE MAKE THEM AUTOSNIPPETS?
