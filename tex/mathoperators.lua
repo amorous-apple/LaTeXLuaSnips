@@ -358,7 +358,20 @@ s({trig="odt",snippetType= "autosnippet",priority=1001,dscr= "Odot symbol (e.g. 
       t("\\odot"),
   },{condition = in_mathzone}),
 
+s({trig="meq",snippetType= "autosnippet",priority=1001,dscr= "Must exist symbol.",wordTrig = false},
+    {
+      t("\\meq"),
+  },{condition = in_mathzone}),
 
+s({trig="am",snippetType= "autosnippet",priority=1001,dscr= "Adds '& = ' for use with align. Think 'Ampersand' as the hint.",wordTrig = false},
+    {
+      t("& = "),
+  },{condition = in_mathzone}),
+
+s({trig="ae",snippetType= "autosnippet",priority=1001,dscr= "Adds '&' for use with align. Think 'Ampersand End' as the hint.",wordTrig = false},
+    {
+      t("&"),
+  },{condition = in_mathzone}),
 --MATHEMATICAL FONTS (ONLY TO BE USED IN MATH MODE!) MAYBE MAKE THEM AUTOSNIPPETS?
 
 s({trig="mfc",snippetType="autosnippet",dscr="Math font-> caligraphy",wordTrig = false},
@@ -400,5 +413,11 @@ fmta("\\arccos{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="atan",snippetType="autosnippet",priority=1001,dscr="arctan function",wordTrig = false},
 fmta("\\arctan{<>}",{i(1)}),{condition = in_mathzone}),
+
+s({trig="log",snippetType="autosnippet",priority=1000,dscr="log function",wordTrig = false},
+t("\\log"),{condition = in_mathzone}),
+
+s({trig="ln",snippetType="autosnippet",priority=1001,dscr="natural log function",wordTrig = false},
+fmta("\\ln \\left( <> \\right)",{i(1)}),{condition = in_mathzone}),
 
 }

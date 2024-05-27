@@ -28,14 +28,20 @@
 - DONE ^2 and ^3 shortcuts as well as d^2 x/ d x^2 snippit and par^2 x/ par t^2 snippits
 - DONE +/- symbol
 - DONE Subsections
+- DONE 3x1, 4x1 Matrices
+- DONE 1x3, 1x4 Matrices
+- DONE Logarithms
+- DONE Must be equal to symbol
+- DONE Shortcut for '& = ' and for '&' (for use with align).
 
 
 - Other conflicts (commented out)
 - Units
-- Must be equal to symbol
-- 3x1, 4x1 Matrices
-- 1x3, 1x4 Matrices
 - Image insertion and management? 
-- Logarithms
 - Multi-line boxes.
 - Itemize, enumerate, and item snippits. 
+- Unit matrices (work in progress)
+- Fix spacing of environments to be one tab (see 'fla' snippet as example).
+- Reorganize files (especially math operators)
+- Reference variables instead of declaring them in each file.
+

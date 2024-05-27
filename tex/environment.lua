@@ -4,7 +4,7 @@ s({trig="eqn", dscr="Expands 'eq' into a (numbered) equation environment",wordTr
   fmta(
      [[
        \begin{equation}
-           <>
+	<>
        \end{equation}
      ]],
      { i(1) }
@@ -15,7 +15,7 @@ s({trig="eq", dscr="Expands 'eq' into a (non-numbered) equation environment",wor
   fmta(
      [[
        \begin{equation*}
-           <>
+	<>
        \end{equation*}
      ]],
      { i(1) }
@@ -25,7 +25,7 @@ s({trig="dm", dscr="inserts a display math (non-numbered equations) environment"
   fmta(
      [[
        \[
-           <>
+	<>
        \]
      ]],
      { i(1) }
@@ -43,7 +43,7 @@ s({trig="begindoc", dscr="inserts begin/end doc environment",wordTrig = false},
   fmta(
      [[
        \begin{document}
-           <>
+	<>
        \end{document}
      ]],
      { i(1) }
@@ -53,7 +53,7 @@ s({trig="beg", dscr="Inserts a begin{}/end{} environment",wordTrig = false},
   fmta(
      [[
        \begin{<>}
-           <>
+	<>
        \end{<>}
      ]],
      { i(1),i(0),rep(1) }
@@ -62,9 +62,19 @@ s({trig="beg", dscr="Inserts a begin{}/end{} environment",wordTrig = false},
 s({trig="gat", dscr="Expands 'gat' into a (non-numbered) gather environment",wordTrig = false},
   fmta(
      [[
-       \begin{gather*}
-           <>
-       \end{gather*}
+	\begin{gather*}
+		<>
+	\end{gather*}
+     ]],
+     { i(1) }
+  )
+),
+s({trig="fla", dscr="Expands 'fla' into a (non-numbered) flalign environment",wordTrig = false},
+  fmta(
+     [[
+       \begin{flalign*}
+       	<>
+       \end{flalign*}
      ]],
      { i(1) }
   )
@@ -73,7 +83,7 @@ s({trig="gatn", dscr="Expands 'gatn' into a (numbered) gather environment",wordT
   fmta(
      [[
        \begin{gather}
-           <>
+	<>
        \end{gather}
      ]],
      { i(1) }
@@ -83,7 +93,7 @@ s({trig="ali", dscr="Expands 'ali' into a (not-numbered) align environment",word
   fmta(
      [[
        \begin{align*}
-           <>
+	<>
        \end{align*}
      ]],
      { i(1) }
@@ -93,7 +103,7 @@ s({trig="alin", dscr="Expands 'alin' into a (numbered) align environment",wordTr
   fmta(
      [[
        \begin{align}
-           <>
+	<>
        \end{align}
      ]],
      { i(1) }

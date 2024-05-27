@@ -7,7 +7,7 @@ return {
 				\documentclass[12pt]{article}
 
 				\usepackage[margin=1in]{geometry} 
-				\usepackage{amsmath,amsthm,amssymb}
+				\usepackage{amsmath,amsthm,amssymb,enumitem}
 				\usepackage[german,spanish,english]{babel}
 				\usepackage{tensor}
 				\usepackage[T1]{fontenc}
@@ -16,6 +16,8 @@ return {
 
 				\newenvironment{sol}[1][Solution]{\begin{trivlist}
 				\item[\hskip \labelsep {\bfseries #1:}]}{\end{trivlist}}
+
+				\newcommand{\meq}{\overset{!}{=}}
 
 
 				\begin{document}
