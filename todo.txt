@@ -44,4 +44,7 @@
 - Fix spacing of environments to be one tab (see 'fla' snippet as example).
 - Reorganize files (especially math operators)
 - Reference variables instead of declaring them in each file.
-
+- Double and triple integral snippits for surfaces and volumes (integrals of multiple variables, such as when integrating a volume in spherical coordinates). 
+- Scientific notation snippit
+- Horizontal line (hrule)
+- 

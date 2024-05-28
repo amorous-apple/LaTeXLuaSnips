@@ -372,9 +372,9 @@ s({trig="am",snippetType= "autosnippet",priority=1001,dscr= "Adds '& = ' for use
       t("& = "),
   },{condition = in_mathzone}),
 
-s({trig="ae",snippetType= "autosnippet",priority=1001,dscr= "Adds '&' for use with align. Think 'Ampersand End' as the hint.",wordTrig = false},
+s({trig="ae",snippetType= "autosnippet",priority=1001,dscr= "Adds '&\\' for use with align. Think 'Ampersand End' as the hint.",wordTrig = false},
     {
-      t("&"),
+      t("&\\\\"),
   },{condition = in_mathzone}),
 --MATHEMATICAL FONTS (ONLY TO BE USED IN MATH MODE!) MAYBE MAKE THEM AUTOSNIPPETS?
 
