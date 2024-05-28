@@ -392,31 +392,31 @@ fmta("\\mathfrak{<>}",{i(1)}),{condition = in_mathzone}),
 --MATHEMATICAL FUNCTIONS (TRIG. FUNCTIONS, ETC.)
 
 	s({trig="sin",snippetType="autosnippet",priority=1000,dscr="sin function",wordTrig = false},
-fmta("\\sin{<>}",{i(1)}),{condition = in_mathzone}),
+fmta("\\sin<>",{i(1)}),{condition = in_mathzone}),
 
 s({trig="cos",snippetType="autosnippet",priority=1000,dscr="cos function",wordTrig = false},
-fmta("\\cos{<>}",{i(1)}),{condition = in_mathzone}),
+fmta("\\cos<>",{i(1)}),{condition = in_mathzone}),
 
 s({trig="tan",snippetType="autosnippet",priority=1000,dscr="tan function",wordTrig = false},
-fmta("\\tan{<>}",{i(1)}),{condition = in_mathzone}),
+fmta("\\tan<>",{i(1)}),{condition = in_mathzone}),
 
 s({trig="hsin",snippetType="autosnippet",priority=1001,dscr="hyperbolic sin function",wordTrig = false},
-fmta("\\sinh{<>}",{i(1)}),{condition = in_mathzone}),
+fmta("\\sinh<>",{i(1)}),{condition = in_mathzone}),
 
 s({trig="hcos",snippetType="autosnippet",priority=1001,dscr="hyperbolic cos function",wordTrig = false},
-fmta("\\cosh{<>}",{i(1)}),{condition = in_mathzone}),
+fmta("\\cosh<>",{i(1)}),{condition = in_mathzone}),
 
 s({trig="htan",snippetType="autosnippet",priority=1001,dscr="hyperbolic tan function",wordTrig = false},
-fmta("\\tanh{<>}",{i(1)}),{condition = in_mathzone}),
+fmta("\\tanh<>",{i(1)}),{condition = in_mathzone}),
 
 s({trig="asin",snippetType="autosnippet",priority=1001,dscr="arcsin function",wordTrig = false},
-fmta("\\arcsin{<>}",{i(1)}),{condition = in_mathzone}),
+fmta("\\arcsin<>",{i(1)}),{condition = in_mathzone}),
 
 s({trig="acos",snippetType="autosnippet",priority=1001,dscr="arccos function",wordTrig = false},
-fmta("\\arccos{<>}",{i(1)}),{condition = in_mathzone}),
+fmta("\\arccos<>",{i(1)}),{condition = in_mathzone}),
 
 s({trig="atan",snippetType="autosnippet",priority=1001,dscr="arctan function",wordTrig = false},
-fmta("\\arctan{<>}",{i(1)}),{condition = in_mathzone}),
+fmta("\\arctan<>",{i(1)}),{condition = in_mathzone}),
 
 s({trig="log",snippetType="autosnippet",priority=1000,dscr="log function",wordTrig = false},
 t("\\log"),{condition = in_mathzone}),
