@@ -322,16 +322,6 @@ s({trig="def",snippetType= "autosnippet",dscr= "'Defined as' symbol.",wordTrig =
       t("\\equiv"),
   },{condition = in_mathzone}),
 
-s({trig="ez",snippetType= "autosnippet",dscr= "Exponent of 'zwei' snippit (power of two).",wordTrig = false},
-    {
-      t("^{2}"),
-  },{condition = in_mathzone}),
-
-s({trig="ed",snippetType= "autosnippet",priority= 900, dscr= "Exponent of 'drei' snippit (power of three)",wordTrig = false},
-    {
-      t("^{3}"),
-  },{condition = in_mathzone}),
-
 s({trig="gg",snippetType= "autosnippet",dscr= "Much greater than symbol.",wordTrig = false},
     {
       t("\\gg"),
