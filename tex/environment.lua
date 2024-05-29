@@ -193,7 +193,7 @@ s({trig="vb",dscr="Vertical Brackets",wordTrig= false},fmta([[
 ]],{i(1),i(0)})),
 
 s({trig="db",dscr="double vertical Brackets",wordTrig= false},fmta([[
-\left| <> \right| <>
+\left\| <> \right\| <>
 ]],{i(1),i(0)})),
 
 ----------------------------------------------INSIDE MATH ENVIRONMENTS/COMMANDS-----------------------------------------------------
