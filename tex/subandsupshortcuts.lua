@@ -8,11 +8,6 @@ end
 --
 --
 return {
-s({trig=":exp", snippetType="autosnippet"},
-  {
-    t("Experiment Success."),
-  }
-),
 s({trig = "([^%a])mm", wordTrig = false, regTrig = true},
   fmta(
     "<>$<>$",
@@ -36,10 +31,34 @@ s({trig = '([%a%)%]%}])00', regTrig = true, wordTrig = false, snippetType="autos
 
 ),
 
+-- Add a 0 superscript when typing ;00 after a letter. 
+s({trig = '([%a%)%]%}]);00', regTrig = true, wordTrig = false, snippetType="autosnippet"},
+  fmta(
+    "<>^{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      t("0")
+    }
+  ),{condition = in_mathzone}
+
+),
+
 -- Add a 1 subscript when typing 11 after a letter. 
 s({trig = '([%a%)%]%}])11', regTrig = true, wordTrig = false, snippetType="autosnippet"},
   fmta(
     "<>_{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      t("1")
+    }
+  ),{condition = in_mathzone}
+
+),
+
+-- Add a 1 superscript when typing ;11 after a letter. 
+s({trig = '([%a%)%]%}]);11', regTrig = true, wordTrig = false, snippetType="autosnippet"},
+  fmta(
+    "<>^{<>}",
     {
       f( function(_, snip) return snip.captures[1] end ),
       t("1")
@@ -60,10 +79,34 @@ s({trig = '([%a%)%]%}])22', regTrig = true, wordTrig = false, snippetType="autos
 
 ),
 
+-- Add a 2 superscript when typing ;22 after a letter. 
+s({trig = '([%a%)%]%}]);22', regTrig = true, wordTrig = false, snippetType="autosnippet"},
+  fmta(
+    "<>^{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      t("2")
+    }
+  ),{condition = in_mathzone}
+
+),
+
 -- Add a 3 subscript when typing 33 after a letter. 
 s({trig = '([%a%)%]%}])33', regTrig = true, wordTrig = false, snippetType="autosnippet"},
   fmta(
     "<>_{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      t("3")
+    }
+  ),{condition = in_mathzone}
+
+),
+
+-- Add a 3 superscript when typing ;33 after a letter. 
+s({trig = '([%a%)%]%}]);33', regTrig = true, wordTrig = false, snippetType="autosnippet"},
+  fmta(
+    "<>^{<>}",
     {
       f( function(_, snip) return snip.captures[1] end ),
       t("3")
@@ -108,7 +151,7 @@ s({trig = '([%a%)%]%}])zz', regTrig = true, wordTrig = false, snippetType="autos
 
 ),
 
--- Add a m subscript when typing mm after a letter. 
+-- Add an m subscript when typing mm after a letter. 
 s({trig = '([%a%)%]%}])mm', regTrig = true, wordTrig = false, snippetType="autosnippet"},
   fmta(
     "<>_{<>}",
@@ -120,13 +163,37 @@ s({trig = '([%a%)%]%}])mm', regTrig = true, wordTrig = false, snippetType="autos
 
 ),
 
--- Add a n subscript when typing nn after a letter. 
+-- Add an n subscript when typing nn after a letter. 
 s({trig = '([%a%)%]%}])nn', regTrig = true, wordTrig = false, snippetType="autosnippet"},
   fmta(
     "<>_{<>}",
     {
       f( function(_, snip) return snip.captures[1] end ),
       t("n")
+    }
+  ),{condition = in_mathzone}
+
+),
+
+-- Add a * superscript (conjugate) when typing cj after a letter. 
+s({trig = '([%a%)%]%}])cj', regTrig = true, wordTrig = false, snippetType="autosnippet"},
+  fmta(
+    "<>^{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      t("*")
+    }
+  ),{condition = in_mathzone}
+
+),
+
+-- Add a dagger superscript when typing dg after a letter. 
+s({trig = '([%a%)%]%}])dg', regTrig = true, wordTrig = false, snippetType="autosnippet"},
+  fmta(
+    "<>^{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      t("\\dagger")
     }
   ),{condition = in_mathzone}
 
