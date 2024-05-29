@@ -47,4 +47,5 @@
 - Double and triple integral snippits for surfaces and volumes (integrals of multiple variables, such as when integrating a volume in spherical coordinates). 
 - Scientific notation snippit
 - Horizontal line (hrule)
+- Create snippits for ^0 and ^1 and fix ^2 and ^3 to be more intuitive (perhaps similar to _0, _1, _2, _3, etc. 
 - 

@@ -114,13 +114,13 @@ s({trig="dn",snippetType="autosnippet",dscr="Exponent operator",wordTrig = false
 fmta("_{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="int",snippetType="autosnippet",dscr="Integral operator",wordTrig = false},
-fmta("\\int_{<>}^{<>} {<>} \\,d<>",{i(1),i(2),i(3),i(4)}),{condition = in_mathzone}),
+fmta("\\int_{<>}^{<>} {<>} \\,d <>",{i(1),i(2),i(3),i(4)}),{condition = in_mathzone}),
 
 s({trig="iint",snippetType="autosnippet",priority= 1001,dscr="Double Integral operator",wordTrig = false},
-fmta("\\iint_{<>} {<>} \\,d<> \\,d<>",{i(1),i(2),i(3),i(4)}),{condition = in_mathzone}),
+fmta("\\iint_{<>} {<>} \\,d <> \\,d <>",{i(1),i(2),i(3),i(4)}),{condition = in_mathzone}),
 
 s({trig="fint",snippetType="autosnippet",priority=1001,dscr="Integral operator from -inf to inf (full integral)",wordTrig = false},
-fmta("\\int_{\\infty}^{-\\infty} {<>} \\,d<>",{i(1),i(2)}),{condition = in_mathzone}),
+fmta("\\int_{\\infty}^{-\\infty} {<>} \\,d <>",{i(1),i(2)}),{condition = in_mathzone}),
 
 s({trig="sum",snippetType="autosnippet",dscr="Sum operator",wordTrig = false},
 fmta("\\sum_{<>}^{<>} {<>} ",{i(1),i(2),i(3)}),{condition = in_mathzone}),
@@ -392,36 +392,36 @@ fmta("\\mathfrak{<>}",{i(1)}),{condition = in_mathzone}),
 --MATHEMATICAL FUNCTIONS (TRIG. FUNCTIONS, ETC.)
 
 	s({trig="sin",snippetType="autosnippet",priority=1000,dscr="sin function",wordTrig = false},
-fmta("\\sin<>",{i(1)}),{condition = in_mathzone}),
+fmta("\\sin<> ",{i(1)}),{condition = in_mathzone}),
 
 s({trig="cos",snippetType="autosnippet",priority=1000,dscr="cos function",wordTrig = false},
-fmta("\\cos<>",{i(1)}),{condition = in_mathzone}),
+fmta("\\cos<> ",{i(1)}),{condition = in_mathzone}),
 
 s({trig="tan",snippetType="autosnippet",priority=1000,dscr="tan function",wordTrig = false},
-fmta("\\tan<>",{i(1)}),{condition = in_mathzone}),
+fmta("\\tan<> ",{i(1)}),{condition = in_mathzone}),
 
 s({trig="hsin",snippetType="autosnippet",priority=1001,dscr="hyperbolic sin function",wordTrig = false},
-fmta("\\sinh<>",{i(1)}),{condition = in_mathzone}),
+fmta("\\sinh<> ",{i(1)}),{condition = in_mathzone}),
 
 s({trig="hcos",snippetType="autosnippet",priority=1001,dscr="hyperbolic cos function",wordTrig = false},
-fmta("\\cosh<>",{i(1)}),{condition = in_mathzone}),
+fmta("\\cosh<> ",{i(1)}),{condition = in_mathzone}),
 
 s({trig="htan",snippetType="autosnippet",priority=1001,dscr="hyperbolic tan function",wordTrig = false},
-fmta("\\tanh<>",{i(1)}),{condition = in_mathzone}),
+fmta("\\tanh<> ",{i(1)}),{condition = in_mathzone}),
 
 s({trig="asin",snippetType="autosnippet",priority=1001,dscr="arcsin function",wordTrig = false},
-fmta("\\arcsin<>",{i(1)}),{condition = in_mathzone}),
+fmta("\\arcsin<> ",{i(1)}),{condition = in_mathzone}),
 
 s({trig="acos",snippetType="autosnippet",priority=1001,dscr="arccos function",wordTrig = false},
-fmta("\\arccos<>",{i(1)}),{condition = in_mathzone}),
+fmta("\\arccos<> ",{i(1)}),{condition = in_mathzone}),
 
 s({trig="atan",snippetType="autosnippet",priority=1001,dscr="arctan function",wordTrig = false},
-fmta("\\arctan<>",{i(1)}),{condition = in_mathzone}),
+fmta("\\arctan<> ",{i(1)}),{condition = in_mathzone}),
 
 s({trig="log",snippetType="autosnippet",priority=1000,dscr="log function",wordTrig = false},
 t("\\log"),{condition = in_mathzone}),
 
 s({trig="ln",snippetType="autosnippet",priority=1001,dscr="natural log function",wordTrig = false},
-fmta("\\ln \\left( <> \\right)",{i(1)}),{condition = in_mathzone}),
+fmta("\\ln \\left( <> \\right) ",{i(1)}),{condition = in_mathzone}),
 
 }
