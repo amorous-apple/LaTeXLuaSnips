@@ -101,10 +101,10 @@ fmta("\\partial_{<>}",{i(1)}),{condition = in_mathzone}),
 s({trig="pu",snippetType="autosnippet",dscr="partial derivative up",wordTrig = false},
 fmta("\\partial^{<>}",{i(1)}),{condition = in_mathzone}),
 --Might we worth to delete the following to, since the advantage over typing pd is not substantial
-s({trig="pt",snippetType="autosnippet",dscr="Partial_time operator",wordTrig = false},
+s({trig="pt",dscr="Partial_time operator",wordTrig = false},
 fmta("\\partial_{t}{<>}",{i(1)}),{condition = in_mathzone}),
 
-s({trig="px",snippetType="autosnippet",dscr="Partial_x operator",wordTrig = false},
+s({trig="px",dscr="Partial_x operator",wordTrig = false},
 fmta("\\partial_{x}{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="du",snippetType="autosnippet",dscr="Exponent operator (superscript)",wordTrig = false},

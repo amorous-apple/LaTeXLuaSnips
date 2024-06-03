@@ -8,6 +8,7 @@ end
 --
 --
 return {
+-- Add an 'm' subscript when typing 'mm' after a letter. 
 s({trig = "([^%a])mm", wordTrig = false, regTrig = true},
   fmta(
     "<>$<>$",
@@ -199,6 +200,45 @@ s({trig = '([%a%)%]%}])dg', regTrig = true, wordTrig = false, snippetType="autos
 
 ),
 
+-- Temporary snippiets for adding sub and superscripts for a few numbers until we figure out how to properly use regex. 
+s({trig=";0",snippetType= "autosnippet",dscr= "Adds ^0",wordTrig = false},
+    {
+      t("^{0}"),
+  },{condition = in_mathzone}),
 
+s({trig=";1",snippetType= "autosnippet",dscr= "Adds ^1",wordTrig = false},
+    {
+      t("^{1}"),
+  },{condition = in_mathzone}),
+
+s({trig=";2",snippetType= "autosnippet",dscr= "Adds ^2",wordTrig = false},
+    {
+      t("^{2}"),
+  },{condition = in_mathzone}),
+
+s({trig=";3",snippetType= "autosnippet",dscr= "Adds ^3",wordTrig = false},
+    {
+      t("^{3}"),
+  },{condition = in_mathzone}),
+
+s({trig=":0",snippetType= "autosnippet",dscr= "Adds _0",wordTrig = false},
+    {
+      t("_{0}"),
+  },{condition = in_mathzone}),
+
+s({trig=":1",snippetType= "autosnippet",dscr= "Adds _1",wordTrig = false},
+    {
+      t("_{1}"),
+  },{condition = in_mathzone}),
+
+s({trig=":2",snippetType= "autosnippet",dscr= "Adds _2",wordTrig = false},
+    {
+      t("_{2}"),
+  },{condition = in_mathzone}),
+
+s({trig=":3",snippetType= "autosnippet",dscr= "Adds _3",wordTrig = false},
+    {
+      t("_{3}"),
+  },{condition = in_mathzone}),
 
 }
