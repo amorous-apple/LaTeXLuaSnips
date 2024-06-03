@@ -133,12 +133,44 @@ s({trig="enuma", dscr="Expands 'enuma' into an alphabetical enumerate with an it
   )
 ),
 
+s({trig="enumA", dscr="Expands 'enumA' into an alphabetical enumerate (captical letters) with an item.",wordTrig = false},
+  fmta(
+     [[
+\begin{enumerate}[label=(\Alph*)]
+	\item <>
+\end{enumerate}
+     ]],
+     { i(1) }
+  )
+),
+
 s({trig="enumr", dscr="Expands 'enumr' into a lower case roman numeral enumerate with an item.",wordTrig = false},
   fmta(
      [[
 \begin{enumerate}[label=(\roman*)]
 	\item <>
 \end{enumerate}
+     ]],
+     { i(1) }
+  )
+),
+
+s({trig="enumR", dscr="Expands 'enumR' into an apper case roman numeral enumerate with an item.",wordTrig = false},
+  fmta(
+     [[
+\begin{enumerate}[label=(\Roman*)]
+	\item <>
+\end{enumerate}
+     ]],
+     { i(1) }
+  )
+),
+
+s({trig="itemize", dscr="Expands 'itemize' into an un-ordered list with an item. ",wordTrig = false}, fmta(
+     [[
+\begin{itemize}
+	\item <>
+\end{itemize}
      ]],
      { i(1) }
   )
@@ -167,7 +199,7 @@ s({trig="sol", dscr="Adds a 'solution' environment. ",wordTrig = false},
 
 s({trig="itm",snippetType= "autosnippet",dscr= "Adds an item for a list.",wordTrig = false},
     {
-      t("\\item"),
+      t("\\item "),
   }),
 
 --BRACKETS, PARENTHESES, AND DELIMITERS (NOTE: THE \LEFT \RIGHT COMMAND AUTOMATICALLY ADJUST THE SIZE OF THE DELIMITERS TO MATCH THE HEIGHT OF THE CONTENT INSIDE THEM.
