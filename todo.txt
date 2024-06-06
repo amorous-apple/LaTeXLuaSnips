@@ -33,6 +33,7 @@
 - DONE Logarithms
 - DONE Must be equal to symbol
 - DONE Shortcut for '& = ' and for '&' (for use with align).
+- DONE Add parallel symbol.
 
 
 - Other conflicts (commented out)
@@ -51,4 +52,5 @@
 - Boilerplate for lecture notes
 - Up and down arrow for spins
 - Inner product (Circle with 'times' symbol inside)
-- 
+- Bound integral and bound double integral.
+- Laplace and gradient operators. 

@@ -202,6 +202,11 @@ s({trig="perp",snippetType= "autosnippet",dscr= "perpendicular symbol",wordTrig 
       t("\\perp"),
   },{condition = in_mathzone}),
 
+s({trig="prl",snippetType= "autosnippet",dscr= "parallel snippit",wordTrig = false},
+    {
+      t("\\parallel"),
+  },{condition = in_mathzone}),
+
 s({trig="neq",snippetType= "autosnippet",dscr= "not equal sign",wordTrig = false},
     {
       t("\\neq"),
