@@ -6,13 +6,13 @@ return {
 			[[
 				\documentclass[12pt]{article}
 
+				\usepackage{breqn}
 				\usepackage[margin=1in]{geometry} 
 				\usepackage{amsmath,amsthm,amssymb,enumitem}
 				\usepackage[german,spanish,english]{babel}
 				\usepackage{tensor}
 				\usepackage{esint}
 				\usepackage[T1]{fontenc}
-				\usepackage{breqn}
 				\newenvironment{ex}[2][Exercise]{\begin{trivlist}
 				\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
 
