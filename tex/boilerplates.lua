@@ -10,6 +10,7 @@ return {
 				\usepackage{amsmath,amsthm,amssymb,enumitem}
 				\usepackage[german,spanish,english]{babel}
 				\usepackage{tensor}
+				\usepackage{esint}
 				\usepackage[T1]{fontenc}
 				\usepackage{breqn}
 				\newenvironment{ex}[2][Exercise]{\begin{trivlist}
