@@ -241,4 +241,9 @@ s({trig=":3",snippetType= "autosnippet",dscr= "Adds _3",wordTrig = false},
       t("_{3}"),
   },{condition = in_mathzone}),
 
+s({trig=";-1",snippetType= "autosnippet",dscr= "Adds ^{-1}",wordTrig = false},
+    {
+      t("^{-1}"),
+  },{condition = in_mathzone}),
+
 }

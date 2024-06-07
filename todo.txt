@@ -36,6 +36,7 @@
 - DONE Add parallel symbol.
 - DONE Create snippits for ^0 and ^1 and fix ^2 and ^3 to be more intuitive (perhaps similar to _0, _1, _2, _3, etc. 
 - DONE Bound integral and bound double integral.
+- DONE Fix bra ket notation (errors when taking absolute value of braket combination, such as \left| \left<x\right| \right| (see https://tex.stackexchange.com/questions/214728/braket-notation-in-latex)
 
 
 - Other conflicts (commented out)

@@ -13,6 +13,7 @@ return {
 				\usepackage{tensor}
 				\usepackage{esint}
 				\usepackage[T1]{fontenc}
+				\usepackage{mathtools}
 				\newenvironment{ex}[2][Exercise]{\begin{trivlist}
 				\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
 
@@ -20,6 +21,9 @@ return {
 				\item[\hskip \labelsep {\bfseries #1:}]}{\end{trivlist}}
 
 				\newcommand{\meq}{\overset{!}{=}}
+				\DeclarePairedDelimiter\bra{\langle}{\rvert}
+				\DeclarePairedDelimiter\ket{\lvert}{\rangle}
+				\DeclarePairedDelimiterX\braket[2]{\langle}{\rangle}{#1\,\delimsize\vert\,\mathopen{}#2}
 
 
 				\begin{document}

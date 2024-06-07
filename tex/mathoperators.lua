@@ -86,14 +86,25 @@ fmta("\\vec{\\nabla}\\cdot\\vec{<>}",{i(1)}),{condition = in_mathzone}),
 s({trig="rot",snippetType="autosnippet",dscr="Rotational",wordTrig = false},
 fmta("\\vec{\\nabla}\\times\\vec{<>}",{i(1)}),{condition = in_mathzone}),
 
-s({trig="brk",snippetType="autosnippet",dscr="Hilbert product",wordTrig = false},
-fmt("\\left<{}|{}\\right>{}",{i(1),i(2),i(0)}),{condition = in_mathzone}),
+-- DEPRACATED
+
+-- s({trig="brk",snippetType="autosnippet",dscr="Hilbert product",wordTrig = false},
+-- fmt("\\left<{}|{}\\right>{}",{i(1),i(2),i(0)}),{condition = in_mathzone}),
+
+-- s({trig="bra",snippetType="autosnippet",dscr="Bra from bracket",wordTrig = false},
+-- fmt("\\left<{}\\right|{}",{i(1),i(0)}),{condition = in_mathzone}),
+
+-- s({trig="ket",snippetType="autosnippet",dscr="Ket from bracket",wordTrig = false},
+-- fmt("\\left|{}\\right>{}",{i(1),i(0)}),{condition = in_mathzone}),
 
 s({trig="bra",snippetType="autosnippet",dscr="Bra from bracket",wordTrig = false},
-fmt("\\left<{}\\right|{}",{i(1),i(0)}),{condition = in_mathzone}),
+fmta("\\bra{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="ket",snippetType="autosnippet",dscr="Ket from bracket",wordTrig = false},
-fmt("\\left|{}\\right>{}",{i(1),i(0)}),{condition = in_mathzone}),
+fmta("\\ket{<>}",{i(1)}),{condition = in_mathzone}),
+
+s({trig="brk",snippetType="autosnippet",dscr="Hilbert product",wordTrig = false},
+fmta("\\brk{<>}{<>}",{i(1),i(2)}),{condition = in_mathzone}),
 
 s({trig="pd",snippetType="autosnippet",dscr="partial derivative down",wordTrig = false},
 fmta("\\partial_{<>}",{i(1)}),{condition = in_mathzone}),
