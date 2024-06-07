@@ -98,13 +98,13 @@ fmta("\\vec{\\nabla}\\times\\vec{<>}",{i(1)}),{condition = in_mathzone}),
 -- fmt("\\left|{}\\right>{}",{i(1),i(0)}),{condition = in_mathzone}),
 
 s({trig="bra",snippetType="autosnippet",dscr="Bra from bracket",wordTrig = false},
-fmta("\\bra{<>}",{i(1)}),{condition = in_mathzone}),
+fmta("\\bra*{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="ket",snippetType="autosnippet",dscr="Ket from bracket",wordTrig = false},
-fmta("\\ket{<>}",{i(1)}),{condition = in_mathzone}),
+fmta("\\ket*{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="brk",snippetType="autosnippet",dscr="Hilbert product",wordTrig = false},
-fmta("\\brk{<>}{<>}",{i(1),i(2)}),{condition = in_mathzone}),
+fmta("\\brk*{<>}{<>}",{i(1),i(2)}),{condition = in_mathzone}),
 
 s({trig="pd",snippetType="autosnippet",dscr="partial derivative down",wordTrig = false},
 fmta("\\partial_{<>}",{i(1)}),{condition = in_mathzone}),
