@@ -26,6 +26,7 @@ return {
 				\DeclarePairedDelimiter\ket{\lvert}{\rangle}
 				\DeclarePairedDelimiterX\brk[2]{\langle}{\rangle}{#1\,\delimsize\vert\,\mathopen{}#2}
 				\DeclarePairedDelimiter\normed{\lvert}{\rvert}
+				\DeclareSIUnit\angstrom{\text {Å}}
 
 
 				\begin{document}
