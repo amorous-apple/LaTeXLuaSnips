@@ -9,7 +9,7 @@ s({trig="tt", dscr="Expands 'tt' into '\texttt{}'",wordTrig = false},
 ),
 
 -- Insert a line break (\\)
-s({trig="br",dscr="Insert a line break.",wordTrig = false},
+s({trig="bk",snippetType= "autosnippet", dscr="Insert a line break.",wordTrig = false},
   {t("\\\\")}),
 
 s({trig="sec",dscr="Expands 'sec' into a Section command with a lable command",wordTrig = false},

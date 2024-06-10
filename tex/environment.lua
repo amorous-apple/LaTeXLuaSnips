@@ -234,7 +234,7 @@ s({trig="boxed",snippetType= "autosnippet",dscr="Boxed equation command",wordTri
 \boxed{<>} <>
 ]],{i(1),i(0)})),
 
-s({trig="txt",dscr="normal text inside math environment",wordTrig= false},fmta([[
+s({trig="txt",snippetType="autosnippet", dscr="normal text inside math environment",wordTrig= false},fmta([[
 \text{<>} <>
 ]],{i(1),i(0)})),
 
