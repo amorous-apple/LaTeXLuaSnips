@@ -37,21 +37,21 @@
 - DONE Create snippits for ^0 and ^1 and fix ^2 and ^3 to be more intuitive (perhaps similar to _0, _1, _2, _3, etc. 
 - DONE Bound integral and bound double integral.
 - DONE Fix bra ket notation (errors when taking absolute value of braket combination, such as \left| \left<x\right| \right| (see https://tex.stackexchange.com/questions/214728/braket-notation-in-latex)
+- DONE Laplace and gradient operators. 
+- DONE (see siunitx package) | Units 
+- DONE Itemize, enumerate, and item snippits. 
+- DONE (see siunitx pacakge) | Scientific notation snippit
 
 
 - Other conflicts (commented out)
-- Units
 - Image insertion and management? 
 - Multi-line boxes.
-- Itemize, enumerate, and item snippits. 
 - Unit matrices (work in progress)
 - Fix spacing of environments to be one tab (see 'fla' snippet as example).
 - Reorganize files (especially math operators)
 - Reference variables instead of declaring them in each file.
 - Double and triple integral snippits for surfaces and volumes (integrals of multiple variables, such as when integrating a volume in spherical coordinates). 
-- Scientific notation snippit
 - Horizontal line (hrule)
 - Boilerplate for lecture notes
 - Up and down arrow for spins
 - Inner product (Circle with 'times' symbol inside)
-- Laplace and gradient operators. 

@@ -14,6 +14,7 @@ return {
 				\usepackage{esint}
 				\usepackage[T1]{fontenc}
 				\usepackage{mathtools}
+				\usepackage{siunitx}
 				\newenvironment{ex}[2][Exercise]{\begin{trivlist}
 				\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
 

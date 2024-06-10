@@ -86,6 +86,9 @@ fmta("\\vec{\\nabla}\\cdot\\vec{<>}",{i(1)}),{condition = in_mathzone}),
 s({trig="rot",snippetType="autosnippet",dscr="Rotational",wordTrig = false},
 fmta("\\vec{\\nabla}\\times\\vec{<>}",{i(1)}),{condition = in_mathzone}),
 
+s({trig="lp",snippetType="autosnippet",dscr="Laplacian",wordTrig = false},
+fmta("\\nabla^{2}{<>}",{i(1)}),{condition = in_mathzone}),
+
 -- DEPRACATED
 
 -- s({trig="brk",snippetType="autosnippet",dscr="Hilbert product",wordTrig = false},

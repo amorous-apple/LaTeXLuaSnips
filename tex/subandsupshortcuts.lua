@@ -246,4 +246,19 @@ s({trig=";-1",snippetType= "autosnippet",dscr= "Adds ^{-1}",wordTrig = false},
       t("^{-1}"),
   },{condition = in_mathzone}),
 
+s({trig=".min",snippetType= "autosnippet",dscr= "Adds a 'min' subscript.",wordTrig = false},
+    {
+      t("_{\\text{min}}"),
+  },{condition = in_mathzone}),
+
+s({trig=".max",snippetType= "autosnippet",dscr= "Adds 'max' subscript.",wordTrig = false},
+    {
+      t("_{\\text{max}}"),
+  },{condition = in_mathzone}),
+
+s({trig=".eff",snippetType= "autosnippet",priority = 1001, dscr= "Adds an 'eff' subscript.",wordTrig = false},
+    {
+      t("_{\\text{eff}}"),
+  },{condition = in_mathzone}),
+
 }
