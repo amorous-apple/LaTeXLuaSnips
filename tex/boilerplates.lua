@@ -23,7 +23,8 @@ return {
 				\newcommand{\meq}{\overset{!}{=}}
 				\DeclarePairedDelimiter\bra{\langle}{\rvert}
 				\DeclarePairedDelimiter\ket{\lvert}{\rangle}
-				\DeclarePairedDelimiterX\braket[2]{\langle}{\rangle}{#1\,\delimsize\vert\,\mathopen{}#2}
+				\DeclarePairedDelimiterX\brk[2]{\langle}{\rangle}{#1\,\delimsize\vert\,\mathopen{}#2}
+				\DeclarePairedDelimiter\normed{\lvert}{\rvert}
 
 
 				\begin{document}

@@ -221,7 +221,7 @@ s({trig="ab",dscr="Angle Brackets",wordTrig= false},fmta([[
 ]],{i(1),i(0)})),
 
 s({trig="vb",dscr="Vertical Brackets",wordTrig= false},fmta([[
-\left| <> \right| <>
+\normed*{<>} <>
 ]],{i(1),i(0)})),
 
 s({trig="db",dscr="double vertical Brackets",wordTrig= false},fmta([[
