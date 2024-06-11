@@ -25,10 +25,16 @@ return {
 				\DeclarePairedDelimiter\bra{\langle}{\rvert}
 				\DeclarePairedDelimiter\ket{\lvert}{\rangle}
 				\DeclarePairedDelimiterX\brk[2]{\langle}{\rangle}{#1\,\delimsize\vert\,\mathopen{}#2}
-				\DeclarePairedDelimiter\normed{\lvert}{\rvert}
 				\DeclareSIUnit\angstrom{\text {Å}}
 
+				%DECLARATION OF DELIMITERS%
 
+				\DeclarePairedDelimiter\vb{\lvert}{\rvert}
+				\DeclarePairedDelimiter\rb{(}{)}
+				\DeclarePairedDelimiter\sqrb{[}{]}
+				\DeclarePairedDelimiter\cb{\{}{\}}
+				\DeclarePairedDelimiter\ab{\langle}{\rangle}
+				\DeclarePairedDelimiter\db{\|}{\|}
 				\begin{document}
 				\noindent <> \hfill \today \\[30pt]
 				\centerline{ \Large{ \textbf{ <> }}}

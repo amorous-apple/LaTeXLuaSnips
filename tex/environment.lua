@@ -238,32 +238,56 @@ s({trig="itm",snippetType= "autosnippet",dscr= "Adds an item for a list.",wordTr
       t("\\item "),
   }),
 
---BRACKETS, PARENTHESES, AND DELIMITERS (NOTE: THE \LEFT \RIGHT COMMAND AUTOMATICALLY ADJUST THE SIZE OF THE DELIMITERS TO MATCH THE HEIGHT OF THE CONTENT INSIDE THEM.
+--BRACKETS, PARENTHESES, AND DELIMITERS (NOTE: these snippets are used with the boilerplate \declarePairedDelimiter definitions, if you rather use the snippet version that does not require loading the \DeclarePairedDelimiter commands, then comment the uncommented, and uncomment the commented within this section 
 
 s({trig="rb",dscr="Parentheses (Round brackets)",wordTrig= false},fmta([[
-\left(<>\right) <>
+\rb*{<>}<>
 ]],{i(1),i(0)})),
 
 s({trig="sb",dscr="Square Brackets",wordTrig= false},fmta([[
-\left[<>\right] <>
+\sqrb*{<>}<>
 ]],{i(1),i(0)})),
 
 s({trig="cb",dscr="Curly Brackets",wordTrig= false},fmta([[
-\left\{<> \right\}<>
+\cb*{<>}<>
 ]],{i(1),i(0)})),
 
 s({trig="ab",dscr="Angle Brackets",wordTrig= false},fmta([[
-\left\langle <> \right\rangle<>
+\ab*{<>}<>
 ]],{i(1),i(0)})),
 
 s({trig="vb",dscr="Vertical Brackets",wordTrig= false},fmta([[
-\normed*{<>} <>
+\vb*{<>}<>
 ]],{i(1),i(0)})),
 
 s({trig="db",dscr="double vertical Brackets",wordTrig= false},fmta([[
-\left\| <> \right\| <>
+\db*{<>}<>
 ]],{i(1),i(0)})),
-
+-------------------------------------------------------------------------
+--s({trig="rb",dscr="Parentheses (Round brackets)",wordTrig= false},fmta([[
+--\left(<>\right) <>
+--]],{i(1),i(0)})),
+--
+--s({trig="sb",dscr="Square Brackets",wordTrig= false},fmta([[
+--\left[<>\right] <>
+--]],{i(1),i(0)})),
+--
+--s({trig="cb",dscr="Curly Brackets",wordTrig= false},fmta([[
+--\left\{<> \right\}<>
+--]],{i(1),i(0)})),
+--
+--s({trig="ab",dscr="Angle Brackets",wordTrig= false},fmta([[
+--\left\langle <> \right\rangle<>
+--]],{i(1),i(0)})),
+--
+--s({trig="vb",dscr="Vertical Brackets",wordTrig= false},fmta([[
+--\normed*{<>} <>
+--]],{i(1),i(0)})),
+--
+--s({trig="db",dscr="double vertical Brackets",wordTrig= false},fmta([[
+--\left\| <> \right\| <>
+--]],{i(1),i(0)})),
+--
 ----------------------------------------------INSIDE MATH ENVIRONMENTS/COMMANDS-----------------------------------------------------
 
 s({trig="boxed",snippetType= "autosnippet",dscr="Boxed equation command",wordTrig= false},fmta([[
