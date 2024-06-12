@@ -52,4 +52,12 @@ fmta("\\textit{<>}",{i(1)})),
 s({trig="undr",dscr="underlined text",wordTrig = false},
 fmta("\\underline{<>}",{i(1)})),
 
+s({trig="hrule",snippetType = "autosnippet", dscr="Expands 'hrule' into a horizontal line with some spacing above and below. ",wordTrig = false},
+fmta([[
+\vspace{5pt}
+\hrule
+\vspace{5pt}
+<>
+]],{i(1)})),
+
 }

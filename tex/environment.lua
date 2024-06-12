@@ -238,31 +238,32 @@ s({trig="itm",snippetType= "autosnippet",dscr= "Adds an item for a list.",wordTr
       t("\\item "),
   }),
 
---BRACKETS, PARENTHESES, AND DELIMITERS (NOTE: these snippets are used with the boilerplate \declarePairedDelimiter definitions, if you rather use the snippet version that does not require loading the \DeclarePairedDelimiter commands, then comment the uncommented, and uncomment the commented within this section 
+-- BRACKETS, PARENTHESES, AND DELIMITERS (NOTE: these snippets are used with the boilerplate \declarePairedDelimiter definitions. 
+-- If you would rather use the snippet version that does not require loading the \DeclarePairedDelimiter commands, then comment the uncommented, and uncomment the commented within this section 
 
-s({trig="rb",dscr="Parentheses (Round brackets)",wordTrig= false},fmta([[
+s({trig="rb",snippetType="autosnippet",dscr="Parentheses (Round brackets)",wordTrig= false},fmta([[
 \rb*{<>}<>
-]],{i(1),i(0)})),
+]],{i(1),i(0)}),{condition = in_mathzone}),
 
-s({trig="sb",dscr="Square Brackets",wordTrig= false},fmta([[
+s({trig="sb",snippetType="autosnippet",dscr="Square Brackets",wordTrig= false},fmta([[
 \sqrb*{<>}<>
-]],{i(1),i(0)})),
+]],{i(1),i(0)}),{condition = in_mathzone}),
 
-s({trig="cb",dscr="Curly Brackets",wordTrig= false},fmta([[
+s({trig="cb",snippetType="autosnippet",dscr="Curly Brackets",wordTrig= false},fmta([[
 \cb*{<>}<>
-]],{i(1),i(0)})),
+]],{i(1),i(0)}),{condition = in_mathzone}),
 
-s({trig="ab",dscr="Angle Brackets",wordTrig= false},fmta([[
+s({trig="ab",snippetType="autosnippet",dscr="Angle Brackets",wordTrig= false},fmta([[
 \ab*{<>}<>
-]],{i(1),i(0)})),
+]],{i(1),i(0)}),{condition = in_mathzone}),
 
-s({trig="vb",dscr="Vertical Brackets",wordTrig= false},fmta([[
+s({trig="vb",snippetType="autosnippet",dscr="Vertical Brackets",wordTrig= false},fmta([[
 \vb*{<>}<>
-]],{i(1),i(0)})),
+]],{i(1),i(0)}),{condition = in_mathzone}),
 
-s({trig="db",dscr="double vertical Brackets",wordTrig= false},fmta([[
+s({trig="db",snippetType="autosnippet",dscr="double vertical Brackets",wordTrig= false},fmta([[
 \db*{<>}<>
-]],{i(1),i(0)})),
+]],{i(1),i(0)}),{condition = in_mathzone}),
 -------------------------------------------------------------------------
 --s({trig="rb",dscr="Parentheses (Round brackets)",wordTrig= false},fmta([[
 --\left(<>\right) <>

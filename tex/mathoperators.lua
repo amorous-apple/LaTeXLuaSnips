@@ -203,6 +203,16 @@ s({trig="ra",snippetType= "autosnippet",dscr= "Right arrow",wordTrig = false},
       t("\\rightarrow"),
   },{condition = in_mathzone}),
 
+s({trig="ua",snippetType= "autosnippet",dscr= "Up arrow",wordTrig = false},
+    {
+      t("\\uparrow"),
+  },{condition = in_mathzone}),
+
+s({trig="da",snippetType= "autosnippet",dscr= "Down arrow",wordTrig = false},
+    {
+      t("\\downarrow"),
+  },{condition = in_mathzone}),
+
 
 s({trig="lra",snippetType= "autosnippet", priority = 1001 ,dscr= "Left Right arrow",wordTrig = false},
     {
@@ -312,6 +322,11 @@ s({trig="qed",snippetType= "autosnippet",dscr= "Inserts an 'end-of-proof' box.",
 s({trig="cross",snippetType= "autosnippet",dscr= "Inserts the times/ cross product symbol. ",wordTrig = false},
     {
       t("\\times"),
+  },{condition = in_mathzone}),
+
+s({trig="tcross",snippetType= "autosnippet",priority = 1001, dscr= "Inserts the tensor product symbol. ",wordTrig = false},
+    {
+      t("\\otimes"),
   },{condition = in_mathzone}),
 
 s({trig="leq",snippetType= "autosnippet",dscr= "Less than or equal to symbol.",wordTrig = false},
