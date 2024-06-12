@@ -316,7 +316,7 @@ s({trig="3fun",dscr="piecewise function with 2 cases",wordTrig= false},fmta([[
 
 -- siunitx commands
 
-s({trig="si",snippetType="autosnippet",dscr="Adds an 'si' environment to write units.",wordTrig = false},
+s({trig="Si",snippetType="autosnippet",dscr="Adds an 'si' environment to write units.",wordTrig = false},
 fmta("\\si{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="num",snippetType="autosnippet",dscr="Adds a 'num' environment for scientific notation and large numbers.",wordTrig = false},
