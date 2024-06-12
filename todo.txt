@@ -55,3 +55,4 @@
 - Boilerplate for lecture notes
 - Up and down arrow for spins
 - Inner product (Circle with 'times' symbol inside)
+- Add support for (variable?) tables (maybe not possible to do effectively)

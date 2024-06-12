@@ -35,6 +35,8 @@ return {
 				\DeclarePairedDelimiter\cb{\{}{\}}
 				\DeclarePairedDelimiter\ab{\langle}{\rangle}
 				\DeclarePairedDelimiter\db{\|}{\|}
+
+
 				\begin{document}
 				\noindent <> \hfill \today \\[30pt]
 				\centerline{ \Large{ \textbf{ <> }}}

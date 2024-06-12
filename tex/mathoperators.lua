@@ -78,7 +78,7 @@ s({trig="sqrt",snippetType="autosnippet",dscr="sqrt snippet.",wordTrig = false},
 fmta("\\sqrt{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="grd",snippetType="autosnippet",dscr="Gradient",wordTrig = false},
-fmta("\\nabla{<>}",{i(1)}),{condition = in_mathzone}),
+fmta("\\vec{\\nabla}{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="div",snippetType="autosnippet",dscr="Divergence",wordTrig = false},
 fmta("\\vec{\\nabla}\\cdot\\vec{<>}",{i(1)}),{condition = in_mathzone}),
@@ -88,17 +88,6 @@ fmta("\\vec{\\nabla}\\times\\vec{<>}",{i(1)}),{condition = in_mathzone}),
 
 s({trig="lp",snippetType="autosnippet",dscr="Laplacian",wordTrig = false},
 fmta("\\nabla^{2}{<>}",{i(1)}),{condition = in_mathzone}),
-
--- DEPRACATED
-
--- s({trig="brk",snippetType="autosnippet",dscr="Hilbert product",wordTrig = false},
--- fmt("\\left<{}|{}\\right>{}",{i(1),i(2),i(0)}),{condition = in_mathzone}),
-
--- s({trig="bra",snippetType="autosnippet",dscr="Bra from bracket",wordTrig = false},
--- fmt("\\left<{}\\right|{}",{i(1),i(0)}),{condition = in_mathzone}),
-
--- s({trig="ket",snippetType="autosnippet",dscr="Ket from bracket",wordTrig = false},
--- fmt("\\left|{}\\right>{}",{i(1),i(0)}),{condition = in_mathzone}),
 
 s({trig="bra",snippetType="autosnippet",dscr="Bra from bracket",wordTrig = false},
 fmta("\\bra*{<>}",{i(1)}),{condition = in_mathzone}),
@@ -141,6 +130,9 @@ fmta("\\varoiint_{<>} {<>} \\,d <> \\,d <>",{i(1),i(2),i(3),i(4)}),{condition = 
 
 s({trig="fint",snippetType="autosnippet",priority=1001,dscr="Integral operator from -inf to inf (full integral)",wordTrig = false},
 fmta("\\int_{\\infty}^{-\\infty} {<>} \\,d <>",{i(1),i(2)}),{condition = in_mathzone}),
+
+s({trig="x-x",snippetType="autosnippet",dscr="A shortcut that places an expression for the distance between two vectors. ",wordTrig = false},
+fmta("\\vb*{\\vec{x} - \\vec{x}\\text{ } '} <>",{i(1)}),{condition = in_mathzone}),
 
 s({trig="sum",snippetType="autosnippet",dscr="Sum operator",wordTrig = false},
 fmta("\\sum_{<>}^{<>} {<>} ",{i(1),i(2),i(3)}),{condition = in_mathzone}),
