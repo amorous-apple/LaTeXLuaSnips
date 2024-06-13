@@ -398,6 +398,14 @@ s({trig="ae",snippetType= "autosnippet",priority=1001,dscr= "Adds '&\\' for use 
     {
       t("&\\\\"),
   },{condition = in_mathzone}),
+
+s({trig="kb",snippetType= "autosnippet",priority=1001,dscr= "Adds a formatted Boltzman Constant.",wordTrig = false},
+    {
+      t("k_{\\text{B}}"),
+  },{condition = in_mathzone}),
+
+
+
 --MATHEMATICAL FONTS (ONLY TO BE USED IN MATH MODE!) MAYBE MAKE THEM AUTOSNIPPETS?
 
 s({trig="mfc",snippetType="autosnippet",dscr="Math font-> caligraphy",wordTrig = false},
