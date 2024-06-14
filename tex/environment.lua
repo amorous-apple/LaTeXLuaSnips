@@ -316,11 +316,16 @@ s({trig="3fun",dscr="piecewise function with 2 cases",wordTrig= false},fmta([[
 
 -- siunitx commands
 
-s({trig="Si",snippetType="autosnippet",dscr="Adds an 'si' environment to write units.",wordTrig = false},
-fmta("\\si{<>}",{i(1)}),{condition = in_mathzone}),
+s({trig="SI",snippetType="autosnippet",dscr="Adds an 'si' environment to write units.",wordTrig = false},
+fmta("\\SI{<>}{<>}",{i(1),i(2)}),{condition = in_mathzone}),
 
 s({trig="num",snippetType="autosnippet",dscr="Adds a 'num' environment for scientific notation and large numbers.",wordTrig = false},
 fmta("\\num{<>}",{i(1)}),{condition = in_mathzone}),
+
+s({trig="micro",snippetType= "autosnippet",dscr= "Adds 'micro' for use with the SI snippet. ",wordTrig = false},
+    {
+      t("\\micro"),
+  },{condition = in_mathzone}),
 
 
 

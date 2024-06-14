@@ -16,18 +16,24 @@ s({trig="sec",dscr="Expands 'sec' into a Section command with a lable command",w
 fmta([[
 \section{<>}
 \label{sec:<>}
+
+
 ]],{i(1),i(2)})),
 
 s({trig="ssec",priority = 1001, dscr="Expands 'ssec' into a subsection command with a lable command",wordTrig = false},
 fmta([[
 \subsection{<>}
 \label{subsec:<>}
+
+
 ]],{i(1),i(2)})),
 
 s({trig="sssec",priority = 1002, dscr="Expands 'sssec' into a subsubsection command with a lable command",wordTrig = false},
 fmta([[
 \subsubsection{<>}
 \label{subsubsec:<>}
+
+
 ]],{i(1),i(2)})),
 
 s({trig="bru",dscr="Expands 'bru' into an underbrace and adds the comment. ",wordTrig = false},
