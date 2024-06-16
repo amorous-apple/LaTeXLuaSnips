@@ -321,6 +321,21 @@ fmta("\\SI{<>}{<>}",{i(1),i(2)}),{condition = in_mathzone}),
 
 s({trig="num",snippetType="autosnippet",dscr="Adds a 'num' environment for scientific notation and large numbers.",wordTrig = false},
 fmta("\\num{<>}",{i(1)}),{condition = in_mathzone}),
+--Images support with the "graphicx package"--
+s({trig="fig", dscr="Adds a figure environment",wordTrig = false},
+  fmta(
+     [[
+     \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.75\textwidth]{<>}
+    \caption{<>}
+    \label{fig:<>}
+\end{figure}
+<>
+     ]],
+     { i(1),i(2),i(3),i(0)}
+  )
+),
 
 s({trig="micro",snippetType= "autosnippet",dscr= "Adds 'micro' for use with the SI snippet. ",wordTrig = false},
     {

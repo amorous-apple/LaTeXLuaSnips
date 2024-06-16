@@ -11,6 +11,7 @@ return {
 				\usepackage{amsmath,amsthm,amssymb,enumitem}
 				\usepackage[german,spanish,english]{babel}
 				\usepackage{tensor}
+				\usepackage{graphicx}
 				\usepackage{esint}
 				\usepackage[T1]{fontenc}
 				\usepackage{mathtools}
