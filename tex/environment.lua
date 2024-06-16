@@ -327,10 +327,13 @@ s({trig="micro",snippetType= "autosnippet",dscr= "Adds 'micro' for use with the 
       t("\\micro"),
   },{condition = in_mathzone}),
 
+s({trig="point",dscr="Expands 'point' into a right-aligned section to write the point numbers for a problem.",wordTrig = false},
+fmta([[
+\begin{flushright}
+	\textbf{(<> Points)}
+\end{flushright}
 
 
-
-
-
+]],{i(1)})),
 
 }
