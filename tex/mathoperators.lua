@@ -404,6 +404,11 @@ s({trig="kb",snippetType= "autosnippet",priority=1001,dscr= "Adds a formatted Bo
       t("k_{\\text{B}}"),
   },{condition = in_mathzone}),
 
+s({trig="k.",snippetType= "autosnippet",priority=1001,dscr= "Adds the constant 'k' from electrodynamics.",wordTrig = false},
+    {
+      t("\\frac{1}{4 \\pi \\epsilon_{0}}"),
+  },{condition = in_mathzone}),
+
 
 
 --MATHEMATICAL FONTS (ONLY TO BE USED IN MATH MODE!) MAYBE MAKE THEM AUTOSNIPPETS?

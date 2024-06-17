@@ -56,3 +56,4 @@
 - Double and triple integral snippits for surfaces and volumes (integrals of multiple variables, such as when integrating a volume in spherical coordinates). 
 - Boilerplate for lecture notes
 - Add support for (variable?) tables (maybe not possible to do effectively)
+- Add a product snippit (like the sum snippit).
