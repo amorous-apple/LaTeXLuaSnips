@@ -116,6 +116,10 @@ fmta("^{<>}",{i(1)}),{condition = in_mathzone}),
 s({trig="dn",snippetType="autosnippet",dscr="Exponent operator",wordTrig = false},
 fmta("_{<>}",{i(1)}),{condition = in_mathzone}),
 
+s({trig="over",snippetType="autosnippet",dscr="Exponent operator",wordTrig = false},
+fmta("\\overline{<>}",{i(1)}),{condition = in_mathzone}),
+
+
 s({trig="int",snippetType="autosnippet",dscr="Integral operator",wordTrig = false},
 fmta("\\int_{<>}^{<>} {<>} \\,d <>",{i(1),i(2),i(3),i(4)}),{condition = in_mathzone}),
 
@@ -129,7 +133,7 @@ s({trig="bbint",snippetType="autosnippet",priority = 1002, dscr="Bound double in
 fmta("\\varoiint_{<>} {<>} \\,d <> \\,d <>",{i(1),i(2),i(3),i(4)}),{condition = in_mathzone}),
 
 s({trig="fint",snippetType="autosnippet",priority=1001,dscr="Integral operator from -inf to inf (full integral)",wordTrig = false},
-fmta("\\int_{\\infty}^{-\\infty} {<>} \\,d <>",{i(1),i(2)}),{condition = in_mathzone}),
+fmta("\\int_{-\\infty}^{\\infty} {<>} \\,d <>",{i(1),i(2)}),{condition = in_mathzone}),
 
 s({trig="x-x",snippetType="autosnippet",dscr="A shortcut that places an expression for the distance between two vectors. ",wordTrig = false},
 fmta("\\vb*{\\vec{x} - \\vec{x}\\text{ } '} <>",{i(1)}),{condition = in_mathzone}),
