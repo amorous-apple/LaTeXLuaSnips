@@ -116,6 +116,30 @@ s({trig = '([%a%)%]%}]);33', regTrig = true, wordTrig = false, snippetType="auto
 
 ),
 
+-- Add a 4 subscript when typing 44 after a letter. 
+s({trig = '([%a%)%]%}])44', regTrig = true, wordTrig = false, snippetType="autosnippet"},
+  fmta(
+    "<>_{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      t("4")
+    }
+  ),{condition = in_mathzone}
+
+),
+
+-- Add a 4 superscript when typing ;44 after a letter. 
+s({trig = '([%a%)%]%}]);44', regTrig = true, wordTrig = false, snippetType="autosnippet"},
+  fmta(
+    "<>^{<>}",
+    {
+      f( function(_, snip) return snip.captures[1] end ),
+      t("4")
+    }
+  ),{condition = in_mathzone}
+
+),
+
 -- Add a x subscript when typing xx after a letter. 
 s({trig = '([%a%)%]%}])xx', regTrig = true, wordTrig = false, snippetType="autosnippet"},
   fmta(
@@ -221,6 +245,11 @@ s({trig=";3",snippetType= "autosnippet",dscr= "Adds ^3",wordTrig = false},
       t("^{3}"),
   },{condition = in_mathzone}),
 
+s({trig=";4",snippetType= "autosnippet",dscr= "Adds ^4",wordTrig = false},
+    {
+      t("^{4}"),
+  },{condition = in_mathzone}),
+
 s({trig=":0",snippetType= "autosnippet",dscr= "Adds _0",wordTrig = false},
     {
       t("_{0}"),
@@ -239,6 +268,11 @@ s({trig=":2",snippetType= "autosnippet",dscr= "Adds _2",wordTrig = false},
 s({trig=":3",snippetType= "autosnippet",dscr= "Adds _3",wordTrig = false},
     {
       t("_{3}"),
+  },{condition = in_mathzone}),
+
+s({trig=":4",snippetType= "autosnippet",dscr= "Adds _4",wordTrig = false},
+    {
+      t("_{4}"),
   },{condition = in_mathzone}),
 
 s({trig=";-1",snippetType= "autosnippet",dscr= "Adds ^{-1}",wordTrig = false},
