@@ -1,6 +1,8 @@
 return {
 	s(
-		{trig="homework", dscr="A convenient boilerplate for math homework. Add/delete packages according to your personal needs.This boilerplate has two additional environments, 'ex' and 'sol' (excercise and solution respectively)"
+		{
+			trig = "homework",
+			dscr = "A convenient boilerplate for math homework. Add/delete packages according to your personal needs.This boilerplate has two additional environments, 'ex' and 'sol' (excercise and solution respectively)",
 		},
 		fmta(
 			[[
@@ -46,12 +48,17 @@ return {
 
 				\end{document}
 			]],
-			{ i(1, "Name(s)"),i(2, "Title of the homework"),i(0) }
-	  	)
+			{ i(1, "Name(s)"), i(2, "Title of the homework"), i(0) }
+		)
 	),
 
-	s({trig="booklet", dscr="A convienient, simple boilerplate to make a math booklet, ideal for texts shorter than books, but bigger than homeworks or articles."},
-		fmta([[
+	s(
+		{
+			trig = "booklet",
+			dscr = "A convienient, simple boilerplate to make a math booklet, ideal for texts shorter than books, but bigger than homeworks or articles.",
+		},
+		fmta(
+			[[
 			\documentclass{article}
 			\usepackage{amsmath}
 			\usepackage{amsthm}
@@ -71,9 +78,7 @@ return {
 			<>
 			\end{document}
 			]],
-			{ i(1, "Title"),i(2, "Name"),i(0) }
-	  	)
+			{ i(1, "Title"), i(2, "Name"), i(0) }
+		)
 	),
-
 }
- 
